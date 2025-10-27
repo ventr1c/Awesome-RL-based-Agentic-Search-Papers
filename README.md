@@ -42,14 +42,6 @@ We will update our repository quickly!
 ## Method
 ### How RL is Used: Optimization Strategies
 The below table summarizes representative works with corresponding optimization strategies.
-
-Involved Datasets: 
-* [NQ: Natural Questions](https://aclanthology.org/Q19-1026/)
-* [TQ: TriviaQA](https://arxiv.org/abs/1705.03551)
-* [PQ: PopQA](https://arxiv.org/abs/2212.10511)
-* [HPQ: HotpotQA](https://arxiv.org/abs/1809.09600)
-* [MS: Musique](https://arxiv.org/abs/2108.00573)
-* [2WK: 2WikiMultiHopQA](https://arxiv.org/abs/2011.01060)
 <details>
 <summary>📊 Click to expand long table (scrollable)</summary>
 
