@@ -16,12 +16,18 @@ For more details, please check out our survey paper: [A Comprehensive Survey on 
 We will update our repository quickly!
 
 ## Contents
-* [Survey](#survey)
+* [Overview of RL-based Agentic Search](#overview-of-rl-based-agentic-search)
+* [Representative Survey](#representative-survey)
 * [Method](#method)
 * [Evaluation](#evaluation)
 
+## Overview of RL-based Agentic Search
+![Overview of RL-based Agentic Search](figures/overview_rl_agentic_search.jpg)
 
-## Survey
+## Illustrative Framework of RL-based Agentic Search
+![Illustrative Framework of RL-based Agentic Search](figures/figure_rl_search_framework.jpg)
+
+## Representative Survey
 | Time  | Paper Title | Venue |
 | :---- | :----------- | :---- |
 | 2025.10 | [A Comprehensive Survey on Reinforcement Learning-based Agentic Search: Foundations, Roles, Optimizations, Evaluations, and Applications](https://arxiv.org/abs/2510.16724) | *arXiv* |
@@ -36,8 +42,8 @@ We will update our repository quickly!
 ## Method
 ### Functional Roles of RL in Agentic Search
 #### Retrieval Control
-| Time  | Paper Title | Venue |
-| :---- | :----------- | :---- |
+| Time  | Paper Title | Venue | Code |
+| :---- | :----------- | :---- | :---- |
 | 2025.03 | [Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning](https://arxiv.org/pdf/2503.09516) | *COLM 2025* |
 | 2025.3 | [Learning to Reason with Search for LLMs via Reinforcement Learning](https://arxiv.org/abs/2503.19470) | *NeurIPS 2025* |
 | 2025.2 | [DeepRAG: Thinking to Retrieval Step by Step for Large Language Models](https://arxiv.org/abs/2502.01142) | *arXiv* |
