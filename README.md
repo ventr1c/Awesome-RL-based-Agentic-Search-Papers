@@ -40,7 +40,7 @@ We will update our repository quickly!
 ---
 
 ## Method
-### Functional Roles of RL in Agentic Search
+### What RL is for: Functional Roles in Agentic Search
 #### Retrieval Control
 | Time  | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
@@ -120,7 +120,82 @@ We will update our repository quickly!
 | 2025.8 | [GRAIL: Learning to Interact with Large Knowledge Graphs for Retrieval‑Augmented Reasoning](https://arxiv.org/abs/2508.05498) |  | *arXiv* |  |
 | 2025.7 | [DynaSearcher: Dynamic Knowledge Graph Augmented Search Agent via Multi‑Reward Reinforcement Learning](https://arxiv.org/abs/2507.17365) |  | *arXiv* |  |
 
-### Optimization Scope
+### How RL is Used: Optimization Strategies
+The below table summarizes representative works with corresponding optimization strategies.
+<details>
+<summary>📊 Click to expand long table (scrollable)</summary>
+
+<div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
+
+| Method | RL Func. Role | Cold Start? | Training Env. | RL Alg. | Reward Type | Reward Func. | Opt. Scope | Dataset |
+|---|---|---|---|---|---|---|---|---|
+| Search-R1 [jin2025searchr1] | Adapt-Search | ✗ | Real-world | PPO<br>GRPO | Rule-based ORM | Answer EM | Single-agent | [kwiatkowski2019natural, joshi2017triviaqa, mallen2022not, yang2018hotpotqa, trivedi2022musique, ho2020constructing, press2022measuring] |
+| ReSearch [chen2025learning] | Adapt-Search | ✗ | Real-world | GRPO | Rule-based ORM | Format<br>Answer F1 | Single-agent | [yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring] |
+| AutoCoA [zhang2025agent] | Adapt-Search | ✓ | Real-world | GRPO | Rule-based ORM | Format<br>Answer EM | Single-agent | [kwiatkowski2019natural, joshi2017triviaqa, mallen2022not, yang2018hotpotqa, trivedi2022musique, ho2020constructing, press2022measuring] |
+| SimpleDeep-<br>Searcher<br>[sun2025simpledeepsearcher] | Adapt-Search | ✓ | Real-world | DPO<br>Reinforce++ | Rule-based ORM | Format<br>Answer F1 | Single-agent | [yang2018hotpotqa, ho2020constructing, trivedi2022musique, tang2024multihop, krishna2024frames, press2022measuring, mialon2023gaia, zhou2025browsecomp, wei2025browsecomp] |
+| ExSearch [shi2025iterative] | Adapt-Search | ✗ | Real-world | GEM | PRM | Trajectory Quality | Single-agent | [kwiatkowski2019natural, yang2018hotpotqa, trivedi2022musique] |
+| IKEA [huang2025reinforced] | Search Efficiency | ✗ | Real-world | GRPO | Rule-based ORM | Format<br>Answer EM<br>Knowledge-boundary | Step-level | [kwiatkowski2019natural, mallen2022not, yang2018hotpotqa, ho2020constructing] |
+| R1-Searcher [song2025r1] | Adapt-Search | ✓ | Real-world | GRPO<br>Reinforce++ | Rule-based ORM | Format<br>Answer F1 | Single-agent | [yang2018hotpotqa, ho2020constructing, press2022measuring, trivedi2022musique] |
+| R1-Searcher++ [song2025r1++] | Search Efficiency | ✓ | Real-world | GRPO<br>Reinforce++ | Rule-based ORM | Format<br>Answer EM<br>Std of Search Calls | Single-agent | [yang2018hotpotqa, ho2020constructing, press2022measuring, trivedi2022musique] |
+| DeepRAG [guan2025deeprag] | Adapt-Search<br>Search Efficiency | ✓ | Real-world | GRPO | Rule-based ORM | Answer EM<br>Retrieval Cost | Single-agent | [yang2018hotpotqa, ho2020constructing, pan2024cag, mallen2022not, berant2013webquestions, trivedi2022musique] |
+| UR² [li2025ur] | Adapt-Search | ✓ | Real-world<br>Curriculum | Reinforce++ | Rule-based ORM | Format<br>Answer EM<br>Fallback Penalty | Single-agent | [hendrycks2021measuring, lewkowycz2022solving, jin2021disease, wang2024mmlu, yang2018hotpotqa, press2022measuring, ho2020constructing, trivedi2022musique] |
+| SSRL [fan2025ssrl] | Adapt-Search | ✓ | Simulated<br>Self-Search | GRPO | Rule-based ORM | Format<br>Answer EM | Single-agent | [kwiatkowski2019natural, joshi2017triviaqa, yang2018hotpotqa, trivedi2022musique, ho2020constructing, press2022measuring] |
+| Pangu DeepDiver [shi2025pangu] | Adapt-Search<br>Search Intensity | ✓ | Real-world | GRPO | Rule-based ORM | Format<br>Answer EM<br>Extra Search | Single-agent | [shi2025pangu, press2022measuring, wei2024measuring, krishna2024frames] |
+| ReZero [dao2025rezero] | Search Intensity | ✗ | Real-world | GRPO | ORM+PRM | Format<br>Answer LLM-Judge<br>Retry | Step-level | [menlo2025apollo3] |
+| StepSearch [wang2025stepsearch] | Adapt-Search<br>Search Intensity | ✗ | Real-world | PPO | Rule-based ORM+PRM | Format<br>Answer F1<br>Search Key<br>Information Gain<br>Redundancy Penalty | Step-level | [yang2018hotpotqa, trivedi2022musique, ho2020constructing, press2022measuring] |
+| VERITAS [xu2025VERITAS] | Adapt-Search<br>R-Aware Opt. | ✗ | Real-world | PPO | ORM+PRM | Answer EM<br>Enhancing Faithfulness | Step-level | [kwiatkowski2019natural, joshi2017triviaqa, mallen2022not, yang2018hotpotqa, trivedi2022musique, ho2020constructing, press2022measuring] |
+| ReasonRAG [zhang2025process] | Search Efficiency<br>R-S Inter. | ✗ | Real-world<br>MCTS | DPO | PRM | Shortest Path | Step-level | [mallen2022not, yang2018hotpotqa, ho2020constructing, press2022measuring, trivedi2022musique] |
+| Web-Sailor [li2025websailor] | Adapt-Search<br>Ctx-Mem. | ✓ | Real-world | DUPO | ORM | Format<br>Answer F1 | Single-agent | [li2025sailorfogqa, wei2025browsecomp, zhou2025browsecomp, mialon2023gaia, xbench] |
+| WebSailor-V2 [li2025websailorv2] | Multi-tool<br>Ctx-Mem. | ✓ | Real-world | GRPO | Rule-based ORM | Format<br>Answer F1 | Single-agent | [li2025sailorfogqav2, wei2025browsecomp, zhou2025browsecomp, mialon2023gaia, xbench, phan2025humanity, du2025deepresearch] |
+| Search Wisely [wu2025search] | Search Efficiency | ✗ | Real-world | β-GRPO | Rule-based ORM | Confidence-based Answer EM | Single-agent | [kwiatkowski2019natural, yang2018hotpotqa, joshi2017triviaqa, ho2020constructing, press2022measuring, trivedi2022musique] |
+| ZeroSearch [sun2025zerosearch] | Search Efficiency | ✓ | Simulated<br>Curriculum | PPO<br>GRPO<br>Reinforce | Rule-based ORM | Answer F1 | Single-agent | [kwiatkowski2019natural, joshi2017triviaqa, mallen2022not, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring] |
+| ParallelSearch [zhao2025parallelsearch] | Search Efficiency | ✓ | Real-world | GRPO | Rule-based ORM | Format<br>Answer EM<br>Query Decomopse<br>Search count | Single-agent | [kwiatkowski2019natural, joshi2017triviaqa, mallen2022not, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring] |
+| RAG-R1 [tan2025ragr1] | Search Efficiency<br>Conv-Reform. | ✓ | Real-world | PPO | ORM | Answer EM | Single-agent | [kwiatkowski2019natural, mallen2022not, joshi2017triviaqa, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring] |
+| ConvSearch-R1 [zhu2025convsearch] | Conv-Reform. | ✓ | Real-world | GRPO | ORM | Format<br>Rank-Incentive | Step-level | [adlakha2022topiocqa, anantha2021open] |
+| MaskSearch [wu2025masksearch] | Conver. Reform.<br>R–S Inter. | ✓ | Real-world<br>Curriculum<br>RAMP | DAPO | Rule-based ORM | Format<br>Answer Recall<br>Length penalty | Single-agent | [yang2018hotpotqa, zhu2024fanoutqa, trivedi2022musique, ho2020constructing, press2022measuring, vu2024freshqa] |
+| DeepRetrieval [jiang2025deepretrieval] | R-Aware Opt. | ✓ | Simulated | PPO | ORM | Format<br>Answer Recall | Single-level | [kwiatkowski2019natural, joshi2017triviaqa, rajpurkar2016squad, thorne2018fever, wadden2020fact] |
+| WebThinker [li2025webthinker] | Search Efficiency | ✗ | Real-world | DPO | PRM | Answer EM<br>Tool Calls<br>Length penalty | Single-agent | [rein2024gpqa, mialon2023gaia, wu2025webwalker, phan2025humanity, du2025supergpqa, openthoughts2025open, yuan2025naturalreasoning, li2024numinamath] |
+| s3 [jiang2025s3] | R-Aware Opt. | ✓ | Simulated | PPO | Rule-based ORM | Gain Beyond RAG | Module-level | [kwiatkowski2019natural, joshi2017triviaqa, mallen2022not, yang2018hotpotqa, ho2020constructing, trivedi2022musique] |
+| R-Search [zhao2025r] | R–S Inter. | ✗ | Real-world | PPO<br>GRPO | Rule-based ORM+PRM | Format<br>Answer F1<br>Evidence Quality | Single-agent | [yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring] |
+| AutoRefine [shi2025search] | R–S Inter. | ✗ | Real-world | GRPO | ORM plus PRM | Answer F1<br>Retrieval Reward | Step-level | [kwiatkowski2019natural, joshi2017triviaqa, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring, mallen2022not] |
+| EvolveSearch [zhang2025evolvesearch] | R–S Inter. | ✓ | Real-world<br>Self-evolving | GRPO | ORM | Format<br>Answer LLM-Judge | Single-agent | [kwiatkowski2019natural, joshi2017triviaqa, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring, mallen2022not] |
+| O²-Searcher [mei2025o2] | R–S Inter. | ✓ | Simulated | GRPO | Rule-based ORM | Format<br>Diversity reward<br>Factual reward | Single-agent | [kwiatkowski2019natural, yang2018hotpotqa, joshi2017triviaqa, mallen2022not, ho2020constructing, trivedi2022musique, press2022measuring] |
+| Atom-Searcher [deng2025atom] | R–S Inter. | ✓ | Real-world<br>Curriculum | GRPO | PRM+Rule-based ORM | Format<br>Answer F1<br>Atomic thought reward | Step-level | [kwiatkowski2019natural, joshi2017triviaqa, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring, mallen2022not] |
+| ReSum [wu2025resum] | Ctx-Mem. | ✗ | Real-world | Resume-GRPO | ORM | Answer LLM-Judge | Single-agent | [mialon2023gaia, wei2025browsecomp, zhou2025browsecomp, wei2024measuring, wu2025webwalker, xbench] |
+| SFR-DeepResearch [nguyen2025sfr] | Ctx-Mem.<br>Multi-tool | ✗ | Real-world | REINFORCE | ORM | Answer LLM-Judge | Single-agent | [krishna2024frames, mialon2023gaia, phan2025humanity] |
+| MAO-ARAG [chen2025mao] | P–E Orches. | ✓ | Real-world | PPO | ORM | Format<br>Cost Penalty<br>Answer F1 | Multi-agent | [kwiatkowski2019natural, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring, mallen2022not, min2020ambigqa] |
+| OPERA [liu2025opera] | P–E Orches. | ✓ | Real-world | MAPGRPO | PRM+ORM | Answerer Reward<br>Planer Reward<br>Rewriter&nbsp;Reward | Multi-agent | [yang2018hotpotqa, ho2020constructing, trivedi2022musique, kwiatkowski2019natural, tang2024multihop] |
+| AI-SearchPlanner [mei2025ai] | P–E Orches. | ✗ | Real-world | PPO | ORM | Answer LLM-Judge<br>Trajectory Rationality | Module-level | [kwiatkowski2019natural, joshi2017triviaqa, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring, mallen2022not] |
+| SIRAG [wang2025sirag] | Cooperative | ✗ | Real-world | PPO | PRM | Process LLM-Judge | Multi-agent | [ho2020constructing, yang2018hotpotqa, kwiatkowski2019natural, mallen2022not] |
+| MMOA-RAG [chen2025improving] | Cooperative<br>R-aware Opt. | ✗ | Real-world | MA-PPO | Rule-based ORM | Answer F1<br>Efficiency penalty | Multi-agent | [yang2018hotpotqa, ho2020constructing, min2020ambigqa] |
+| Tool-Star [dong2025tool] | Multi tool | ✓ | Real-world | REINFORCE++<br>GRPO<br>DPO | Rule-based ORM | Format<br>Answer EM | Single-agent | [lightman2023let, hendrycks2021measuring, cobbe2021training, wu2025webwalker, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring] |
+| WebWatcher [geng2025webwatcher] | Multi tool<br>Multi-modal | ✓ | Real-world | GRPO | ORM | Format<br>Answer LLM-Judge | Single-agent | [phan2025humanity, li2025mm, fu2025livevqa, jiang2024mmsearch, cheng2025simplevqa] |
+| Visual-ARFT [liu2025visual] | Multi-modal<br>Multi-tool<br>Adapt-Search | ✓ | Real-world | GRPO | Rule-based ORM+PRM | Format<br>Answer F1<br>Query Semantic Sim. | Single-agent | [liu2025matsearch] |
+| VRAG-RL [wang2025vrag] | Multi-modal<br>Search Efficiency | ✓ | Simulated | GRPO | ORM | Format<br>Answer LLM-Judge<br>Retrieval Efficiency | Single-agent | [tanaka2023slidevqa, wang2025vidorag, ma2024mmlongbench] |
+| MMSearch-R1 [wu2025mmsearch] | Multi-modal <br>Search Efficiency | ✗ | Real-world | GRPO | Rule-based ORM | Format<br>Answer EM<br>Search Penalty | Single-agent | [wu2025mmsearch, chen2023can, jiang2024mmsearch, cheng2025simplevqa, fu2025livevqa] |
+| GRAIL [chang2025grail] | Adapt-Search<br>Struct-Nav. | ✓ | Real-world<br>Graph Env. | GRPO | PRM | Process LLM-Judge | Single-agent | [berant2013webquestions, puerto2021metaqa, talmor2018web] |
+| DynaSearcher [hao2025dynasearcher] | Struct-Nav. | ✗ | Real-world<br>Graph Env.<br>KG+Doc Search | GRPO | Rule-based ORM | Format<br>Answer F1<br>Information Gain<br>Retrieval Penalty | Single-agent | [yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring, krishna2024frames] |
+| HARIS [hu2025coordinating] | R-S Inter. | ✗ | Real-world | GRPO | Rule-based ORM | Format<br>Answer Accuracy<br>Decision Accuracy | Multi-agent | [ma2024ex, jiang2020hover, si2024checkwhy] |
+| DeepNote [wang2024retriever] | Adapt-Search<br>Conv-Reform. | ✗ | Real-world | DPO | - | - | Single-agent | [yang2018hotpotqa, ho2020constructing, trivedi2022musique, geva2021strategyqa, stelmakh2022asqa] |
+| DeepResearcher [zheng2025deepresearcher] | Adapt-Search<br>Search Efficiency<br>Ctx-Mem. | ✗ | Real-world | GRPO | Rule-based ORM | Format<br>Answer F1 | Module-level | [kwiatkowski2019natural, joshi2017triviaqa, yang2018hotpotqa, ho2020constructing] |
+| SWiRL [goldie2025synthetic] | Adapt-Search<br>R-S Inter. | ✓ | Real-world | PPO | PRM | Step LLM-Judge | Step-level | [yang2018hotpotqa, trivedi2022musique, wu2024cofca, cobbe2021training, qi2021answering] |
+| WebDancer [wu2025webdancer] | Multi tool | ✓ | Real-world | DAPO | ORM | Answer EM | Single-agent | [mialon2023gaia, wu2025webwalker, zhou2025browsecomp, wei2025browsecomp] |
+| MedResearcher-R1 [yu2025medresearcher] | Adpt-Search<br>Multi-Tool | ✓ | Real-world<br>Medical Tool | GRPO | ORM | Answer Acc<br>Response Quality<br>Efficiency penalty | Single-agent | [xbench, mialon2023gaia, chen2025medbrowsecomp] |
+| Lucy [dao2025lucy] | Search Efficiency<br>R–S Inter. | ✓ | Real-world<br>SLMs | DAPO | Rule-based ORM | Format/XML validity<br>Answer EM<br>Tool exec. success<br>Visit/Search ratio<br>Efficient thinking | Single-agent | [wei2024measuring] |
+| ASearcher [gao2025beyond] | R-S Inter.<br>Ctx-Mem.<br>Multi-tool | ✓ | Real-world<br>Browser Env.<br>Asynchronous | GRPO | ORM | Answer LLM-Judge | Single-agent | [kwiatkowski2019natural, joshi2017triviaqa, mallen2022not, yang2018hotpotqa, ho2020constructing, trivedi2022musique, press2022measuring, krishna2024frames, mialon2023gaia, xbench] |
+| WebExplorer [liu2025webexplorer] | Ctx-Mem.<br>Conv-Reform. | ✓ | Real-world<br>Curriculum | GRPO | Rule-based ORM | Format<br>Answer EM | Single-agent | [zhou2025browsecomp, wei2025browsecomp, mialon2023gaia, wu2025webwalker, krishna2024frames, xbench, phan2025humanity] |
+| WebResearcher [qiao2025webresearcher] | Multi-tool | ✓ | Real-world<br>Curriculum | GSPO | Rule-based ORM | Answer EM | Single-agent | [phan2025humanity, mialon2023gaia, wei2025browsecomp, zhou2025browsecomp, xbench, krishna2024frames] |
+| RECON [xu2025reconreasoningcondensationefficient] | Ctx-Mem. | ✓ | Real-world | PPO | Rule-based ORM | Answer EM | Single-agent | [kwiatkowski2019natural, joshi2017triviaqa, press2022measuring, yang2018hotpotqa, ho2020constructing, trivedi2022musique, mallen2022not] |
+| AgentGym-RL [xi2025agentgym] | Cooperative<br>Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
+| Chain-of-Agents [li2025chain] | Cooperative<br>Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
+| Verl [sheng2024hybridflow] | Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
+| VerlTool [jiang2025verltool] | Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
+
+</div>
+</details>
+
+
+### Where RL is Applied: Optimization Scopes
 #### Agent-level
 #### Step-level
 #### Module-level
