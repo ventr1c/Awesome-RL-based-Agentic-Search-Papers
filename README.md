@@ -41,9 +41,9 @@ We will update our repository quickly!
 
 ## Method
 ### How RL is Used: Optimization Strategies
-The below table summarizes representative works with corresponding optimization strategies.
+The below table summarizes representative works with corresponding optimization strategies. Specifically, ORM and PRM denote the Outcome Reward Model and the Process Reward Model, respectively. “Rule-based” indicates that the reward function is entirely computed from predefined rules; otherwise, an LLM is involved as a reward judge.
 <details>
-<summary>📊 Click to expand long table (scrollable)</summary>
+<summary>📊 Click to expand long table (scrollable). </summary>
 
 <div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
 
