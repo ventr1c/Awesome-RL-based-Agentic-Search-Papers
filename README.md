@@ -87,8 +87,8 @@ The below table summarizes representative works with corresponding optimization 
 | MAO-ARAG | P–E Orches. | ✓ | Real-world | PPO | ORM | Format<br>Cost Penalty<br>Answer F1 | Multi-agent | [[NQ](https://aclanthology.org/Q19-1026/), [Hotpot](https://arxiv.org/abs/1809.09600), [2WikiMQA](https://arxiv.org/abs/2011.01060), [Musique](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350), [PopQA](https://arxiv.org/abs/2212.10511), min2020ambigqa] |
 | OPERA | P–E Orches. | ✓ | Real-world | MAPGRPO | PRM+ORM | Answerer Reward<br>Planer Reward<br>Rewriter&nbsp;Reward | Multi-agent | [[Hotpot](https://arxiv.org/abs/1809.09600), [2WikiMQA](https://arxiv.org/abs/2011.01060), [Musique](https://arxiv.org/abs/2108.00573), [NQ](https://aclanthology.org/Q19-1026/), tang2024multihop] |
 | AI-SearchPlanner | P–E Orches. | ✗ | Real-world | PPO | ORM | Answer LLM-Judge<br>Trajectory Rationality | Module-level | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [Hotpot](https://arxiv.org/abs/1809.09600), [2WikiMQA](https://arxiv.org/abs/2011.01060), [Musique](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350), [PopQA](https://arxiv.org/abs/2212.10511)] |
-| SIRAG | Cooperative | ✗ | Real-world | PPO | PRM | Process LLM-Judge | Multi-agent | [[2WikiMQA](https://arxiv.org/abs/2011.01060), [Hotpot](https://arxiv.org/abs/1809.09600), [NQ](https://aclanthology.org/Q19-1026/), [PopQA](https://arxiv.org/abs/2212.10511)] |
-| MMOA-RAG | Cooperative<br>R-aware Opt. | ✗ | Real-world | MA-PPO | Rule-based ORM | Answer F1<br>Efficiency penalty | Multi-agent | [[Hotpot](https://arxiv.org/abs/1809.09600), [2WikiMQA](https://arxiv.org/abs/2011.01060), min2020ambigqa] |
+| SIRAG | Cooperative Multi-Agent Systems | ✗ | Real-world | PPO | PRM | Process LLM-Judge | Multi-agent | [[2WikiMQA](https://arxiv.org/abs/2011.01060), [Hotpot](https://arxiv.org/abs/1809.09600), [NQ](https://aclanthology.org/Q19-1026/), [PopQA](https://arxiv.org/abs/2212.10511)] |
+| MMOA-RAG | Cooperative Multi-Agent Systems<br>R-aware Opt. | ✗ | Real-world | MA-PPO | Rule-based ORM | Answer F1<br>Efficiency penalty | Multi-agent | [[Hotpot](https://arxiv.org/abs/1809.09600), [2WikiMQA](https://arxiv.org/abs/2011.01060), min2020ambigqa] |
 | Tool-Star | Multi tool | ✓ | Real-world | REINFORCE++<br>GRPO<br>DPO | Rule-based ORM | Format<br>Answer EM | Single-agent | [lightman2023let, hendrycks2021measuring, cobbe2021training, wu2025webwalker, [Hotpot](https://arxiv.org/abs/1809.09600), [2WikiMQA](https://arxiv.org/abs/2011.01060), [Musique](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
 | WebWatcher | Multi tool<br>Multi-modal | ✓ | Real-world | GRPO | ORM | Format<br>Answer LLM-Judge | Single-agent | [phan2025humanity, li2025mm, fu2025livevqa, jiang2024mmsearch, cheng2025simplevqa] |
 | Visual-ARFT | Multi-modal<br>Multi-tool<br>Adapt-Search | ✓ | Real-world | GRPO | Rule-based ORM+PRM | Format<br>Answer F1<br>Query Semantic Sim. | Single-agent | [liu2025matsearch] |
@@ -107,8 +107,8 @@ The below table summarizes representative works with corresponding optimization 
 | WebExplorer | Ctx-Mem.<br>Conv-Reform. | ✓ | Real-world<br>Curriculum | GRPO | Rule-based ORM | Format<br>Answer EM | Single-agent | [zhou2025browsecomp, wei2025browsecomp, mialon2023gaia, wu2025webwalker, krishna2024frames, xbench, phan2025humanity] |
 | WebResearcher | Multi-tool | ✓ | Real-world<br>Curriculum | GSPO | Rule-based ORM | Answer EM | Single-agent | [phan2025humanity, mialon2023gaia, wei2025browsecomp, zhou2025browsecomp, xbench, krishna2024frames] |
 | RECON | Ctx-Mem. | ✓ | Real-world | PPO | Rule-based ORM | Answer EM | Single-agent | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [Bamboogle](https://arxiv.org/abs/2210.03350), [Hotpot](https://arxiv.org/abs/1809.09600), [2WikiMQA](https://arxiv.org/abs/2011.01060), [Musique](https://arxiv.org/abs/2108.00573), [PopQA](https://arxiv.org/abs/2212.10511)] |
-| AgentGym-RL | Cooperative<br>Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
-| Chain-of-Agents | Cooperative<br>Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
+| AgentGym-RL | Cooperative Multi-Agent Systems<br>Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
+| Chain-of-Agents | Cooperative Multi-Agent Systems<br>Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
 | Verl | Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
 | VerlTool | Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
 
@@ -154,22 +154,22 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.5 | [s3: You Don’t Need That Much Data to Train a Search Agent via RL](https://arxiv.org/abs/2505.14146) | Retriever‑Aware Optimization | *arXiv* | |
 | 2025.5 | [ZeroSearch: Incentivize the Search Capability of LLMs without Searching](https://arxiv.org/abs/2505.04588) | Search Efficiency | *arXiv* | |
 | 2025.4 | [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776) | Search Efficiency | *arXiv* | |
-| 2025.1 | [Improving Retrieval‑Augmented Generation through Multi‑Agent Reinforcement Learning](https://arxiv.org/abs/2501.15228) | Cooperative | *arXiv* | |
+| 2025.1 | [Improving Retrieval‑Augmented Generation through Multi‑Agent Reinforcement Learning](https://arxiv.org/abs/2501.15228) | Cooperative Multi-Agent Systems | *arXiv* | |
 
 #### Reasoning–Retrieval Integration
 | Time  | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
-| 2025.6 | [R‑Search: Empowering LLM Reasoning with Search via Multi‑Reward Reinforcement Learning](https://arxiv.org/abs/2506.04185) | R–S Inter | *arXiv* | |
-| 2025.5 | [Search and Refine During Think: Autonomous Retrieval‑Augmented Reasoning of LLMs](https://arxiv.org/abs/2505.11277) | R–S Inter | *arXiv* | |
-| 2025.5 | [EvolveSearch: An Iterative Self‑Evolving Search Agent](https://arxiv.org/abs/2505.22501) | R–S Inter | *arXiv* | |
-| 2025.5 | [O²‑Searcher: A Searching‑Based Agent Model for Open‑Domain Open‑Ended Question Answering](https://arxiv.org/abs/2505.16582) | R–S Inter | *arXiv* | |
-| 2025.8 | [Atom‑Searcher: Enhancing Agentic Deep Research via Fine‑Grained Atomic Thought Reward](https://arxiv.org/abs/2508.12800) | R–S Inter | *arXiv* | |
+| 2025.6 | [R‑Search: Empowering LLM Reasoning with Search via Multi‑Reward Reinforcement Learning](https://arxiv.org/abs/2506.04185) | Reasoning-Search Interaction | *arXiv* | |
+| 2025.5 | [Search and Refine During Think: Autonomous Retrieval‑Augmented Reasoning of LLMs](https://arxiv.org/abs/2505.11277) | Reasoning-Search Interaction | *arXiv* | |
+| 2025.5 | [EvolveSearch: An Iterative Self‑Evolving Search Agent](https://arxiv.org/abs/2505.22501) | Reasoning-Search Interaction | *arXiv* | |
+| 2025.5 | [O²‑Searcher: A Searching‑Based Agent Model for Open‑Domain Open‑Ended Question Answering](https://arxiv.org/abs/2505.16582) | Reasoning-Search Interaction | *arXiv* | |
+| 2025.8 | [Atom‑Searcher: Enhancing Agentic Deep Research via Fine‑Grained Atomic Thought Reward](https://arxiv.org/abs/2508.12800) | Reasoning-Search Interaction | *arXiv* | |
 | 2025.9 | [ReSum: Unlocking Long‑Horizon Search Intelligence via Context Summarization](https://arxiv.org/abs/2509.13313) | Context & Memory Management | *arXiv* | |
 | 2025.9 | [SFR‑DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents](https://arxiv.org/abs/2509.06283) | Context & Memory Management; Multi‑Tool | *arXiv* | |
 | 2025.10 | [RECON: Reasoning with Condensation for Efficient Retrieval‑Augmented Generation](https://arxiv.org/abs/2510.10448) | Context & Memory Management | *arXiv* | |
 | 2025.7 | [WebSailor: Navigating Super‑Human Reasoning for Web Agents](https://arxiv.org/abs/2507.02592) | Adaptive Search Decision; Context & Memory Management | *arXiv* | |
 | 2025.7 | [DynaSearcher: Dynamic Knowledge Graph Augmented Search Agent via Multi‑Reward Reinforcement Learning](https://arxiv.org/abs/2507.17365) | Struct‑Nav | *arXiv* | |
-| 2025.8 | [Beyond Ten Turns: Unlocking Long‑Horizon Agentic Search with Large‑Scale Asynchronous RL](https://arxiv.org/abs/2508.07976) | R–S Inter; Retriever‑Aware Optimization | *arXiv* | |
+| 2025.8 | [Beyond Ten Turns: Unlocking Long‑Horizon Agentic Search with Large‑Scale Asynchronous RL](https://arxiv.org/abs/2508.07976) | Reasoning-Search Interaction; Retriever‑Aware Optimization | *arXiv* | |
 
 #### Multi‑Agent Collaboration
 | Time  | Paper Title | Role | Venue | Code |
@@ -177,10 +177,10 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.8 | [MAO‑ARAG: Multi‑Agent Orchestration for Adaptive Retrieval‑Augmented Generation](https://arxiv.org/abs/2508.01005) | Planner-Executor Orchestration | *arXiv* | |
 | 2025.8 | [OPERA: A Reinforcement Learning–Enhanced Orchestrated Planner‑Executor Architecture for Reasoning‑Oriented Multi‑Hop Retrieval](https://arxiv.org/abs/2508.16438) | Planner-Executor Orchestration | *arXiv* | |
 | 2025.8 | [AI‑SearchPlanner: Modular Agentic Search via Pareto‑Optimal Multi‑Objective Reinforcement Learning](https://arxiv.org/abs/2508.20368) | Planner-Executor Orchestration | *arXiv* | |
-| 2025.9 | [SIRAG: Towards Stable and Interpretable RAG with a Process‑Supervised Multi‑Agent Framework](https://arxiv.org/abs/2509.18167) | Cooperative | *arXiv* | |
-| 2025.1 | [Improving Retrieval‑Augmented Generation through Multi‑Agent Reinforcement Learning](https://arxiv.org/abs/2501.15228) | Cooperative | *arXiv* | |
-| 2025.9 | [AgentGym‑RL: Training LLM Agents for Long‑Horizon Decision Making through Multi‑Turn Reinforcement Learning](https://arxiv.org/abs/2509.08755) | Cooperative; Multi‑Tool | *arXiv* | |
-| 2025.8 | [Chain‑of‑Agents: End‑to‑End Agent Foundation Models via Multi‑Agent Distillation and Agentic RL](https://arxiv.org/abs/2508.13167) | Cooperative; Multi‑Tool | *arXiv* | |
+| 2025.9 | [SIRAG: Towards Stable and Interpretable RAG with a Process‑Supervised Multi‑Agent Framework](https://arxiv.org/abs/2509.18167) | Cooperative Multi-Agent Systems | *arXiv* | |
+| 2025.1 | [Improving Retrieval‑Augmented Generation through Multi‑Agent Reinforcement Learning](https://arxiv.org/abs/2501.15228) | Cooperative Multi-Agent Systems | *arXiv* | |
+| 2025.9 | [AgentGym‑RL: Training LLM Agents for Long‑Horizon Decision Making through Multi‑Turn Reinforcement Learning](https://arxiv.org/abs/2509.08755) | Cooperative Multi-Agent Systems; Multi‑Tool | *arXiv* | |
+| 2025.8 | [Chain‑of‑Agents: End‑to‑End Agent Foundation Models via Multi‑Agent Distillation and Agentic RL](https://arxiv.org/abs/2508.13167) | Cooperative Multi-Agent Systems; Multi‑Tool | *arXiv* | |
 | 2025.9 | [WebExplorer: Explore and Evolve for Training Long‑Horizon Web Agents](https://arxiv.org/abs/2509.06501) | Context & Memory Management; Convsational Reformulation | *arXiv* | |
 
 #### Tool and Knowledge Integration
