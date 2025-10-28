@@ -17,6 +17,7 @@ We will update our repository quickly!
 
 ## Contents
 * [Overview of RL-based Agentic Search](#overview-of-rl-based-agentic-search)
+* [Illustrative Framework of RL-based Agentic Search](#illustrative-framework-of-rl-based-agentic-search)
 * [Representative Survey](#representative-survey)
 * [Method](#method)
 * [Evaluation](#evaluation)
