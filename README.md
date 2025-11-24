@@ -107,6 +107,7 @@ The below table summarizes representative works with corresponding optimization 
 | WebExplorer | Ctx-Mem.<br>Conv-Reform. | ✓ | Real-world<br>Curriculum | GRPO | Rule-based ORM | Format<br>Answer EM | Single-agent | [zhou2025browsecomp, wei2025browsecomp, mialon2023gaia, wu2025webwalker, krishna2024frames, xbench, phan2025humanity] |
 | WebResearcher | Multi-tool | ✓ | Real-world<br>Curriculum | GSPO | Rule-based ORM | Answer EM | Single-agent | [phan2025humanity, mialon2023gaia, wei2025browsecomp, zhou2025browsecomp, xbench, krishna2024frames] |
 | RECON | Ctx-Mem. | ✓ | Real-world | PPO | Rule-based ORM | Answer EM | Single-agent | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [Bamboogle](https://arxiv.org/abs/2210.03350), [Hotpot](https://arxiv.org/abs/1809.09600), [2WikiMQA](https://arxiv.org/abs/2011.01060), [Musique](https://arxiv.org/abs/2108.00573), [PopQA](https://arxiv.org/abs/2212.10511)] |
+| Search Self-play | Adapt-Search<br>Self-Play | ✗ | Real-world | GRPO<br>Reinforce | ORM | Answer LLM-Judge<br>Self-Play | Single-agent | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [Bamboogle](https://arxiv.org/abs/2210.03350), [Hotpot](https://arxiv.org/abs/1809.09600), [2WikiMQA](https://arxiv.org/abs/2011.01060), [Musique](https://arxiv.org/abs/2108.00573), [PopQA](https://arxiv.org/abs/2212.10511)] |
 | AgentGym-RL | Cooperative Multi-Agent Systems<br>Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
 | Chain-of-Agents | Cooperative Multi-Agent Systems<br>Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
 | Verl | Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
@@ -170,6 +171,7 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.7 | [WebSailor: Navigating Super‑Human Reasoning for Web Agents](https://arxiv.org/abs/2507.02592) | Adaptive Search Decision; Context & Memory Management | *arXiv* | |
 | 2025.7 | [DynaSearcher: Dynamic Knowledge Graph Augmented Search Agent via Multi‑Reward Reinforcement Learning](https://arxiv.org/abs/2507.17365) | Struct‑Nav | *arXiv* | |
 | 2025.8 | [Beyond Ten Turns: Unlocking Long‑Horizon Agentic Search with Large‑Scale Asynchronous RL](https://arxiv.org/abs/2508.07976) | Reasoning-Search Interaction; Retriever‑Aware Optimization | *arXiv* | |
+| 2025.10 | [Search Self-play: Pushing the Frontier of Agent Capability without Supervision](https://arxiv.org/abs/2510.18821) | Adaptive Search Decision; Self-Play Training | *arXiv* | [Code](https://github.com/Alibaba-Quark/SSP) |
 
 #### Multi‑Agent Collaboration
 | Time  | Paper Title | Role | Venue | Code |
