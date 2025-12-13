@@ -169,7 +169,7 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.9 | [SFR‑DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents](https://arxiv.org/abs/2509.06283) | Context & Memory Management; Multi‑Tool | *arXiv* | |
 | 2025.10 | [RECON: Reasoning with Condensation for Efficient Retrieval‑Augmented Generation](https://arxiv.org/abs/2510.10448) | Context & Memory Management | *arXiv* | |
 | 2025.7 | [WebSailor: Navigating Super‑Human Reasoning for Web Agents](https://arxiv.org/abs/2507.02592) | Adaptive Search Decision; Context & Memory Management | *arXiv* | |
-| 2025.7 | [DynaSearcher: Dynamic Knowledge Graph Augmented Search Agent via Multi‑Reward Reinforcement Learning](https://arxiv.org/abs/2507.17365) | Struct‑Nav | *arXiv* | |
+| 2025.7 | [DynaSearcher: Dynamic Knowledge Graph Augmented Search Agent via Multi‑Reward Reinforcement Learning](https://arxiv.org/abs/2507.17365) | Structured Knowledge Navigation | *arXiv* | |
 | 2025.8 | [Beyond Ten Turns: Unlocking Long‑Horizon Agentic Search with Large‑Scale Asynchronous RL](https://arxiv.org/abs/2508.07976) | Reasoning-Search Interaction; Retriever‑Aware Optimization | *arXiv* | |
 | 2025.10 | [Search Self-play: Pushing the Frontier of Agent Capability without Supervision](https://arxiv.org/abs/2510.18821) | Adaptive Search Decision; Self-Play Training | *arXiv* | [Code](https://github.com/Alibaba-Quark/SSP) |
 
@@ -196,8 +196,8 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.5 | [Visual Agentic Reinforcement Fine‑Tuning](https://arxiv.org/abs/2505.14246) | Multi‑Modal; Multi‑Tool; Adaptive Search Decision | *arXiv* | |
 | 2025.5 | [VRAG‑RL: Empower Vision‑Perception‑Based RAG for Visually Rich Information Understanding via Iterative Reasoning with RL](https://arxiv.org/abs/2505.22019) | Multi‑Modal; Search Efficiency | *arXiv* | |
 | 2025.6 | [MMSearch‑R1: Incentivizing LMMs to Search](https://arxiv.org/abs/2506.20670) | Multi‑Modal; Search Efficiency | *arXiv* | |
-| 2025.8 | [GRAIL: Learning to Interact with Large Knowledge Graphs for Retrieval‑Augmented Reasoning](https://arxiv.org/abs/2508.05498) | Adaptive Search Decision; Struct‑Nav | *arXiv* | |
-| 2025.7 | [DynaSearcher: Dynamic Knowledge Graph Augmented Search Agent via Multi‑Reward Reinforcement Learning](https://arxiv.org/abs/2507.17365) | Struct‑Nav | *arXiv* | |
+| 2025.8 | [GRAIL: Learning to Interact with Large Knowledge Graphs for Retrieval‑Augmented Reasoning](https://arxiv.org/abs/2508.05498) | Adaptive Search Decision; Structured Knowledge Navigation | *arXiv* | |
+| 2025.7 | [DynaSearcher: Dynamic Knowledge Graph Augmented Search Agent via Multi‑Reward Reinforcement Learning](https://arxiv.org/abs/2507.17365) | Structured Knowledge Navigation | *arXiv* | |
 
 
 ### Where RL is Applied: Optimization Scopes
