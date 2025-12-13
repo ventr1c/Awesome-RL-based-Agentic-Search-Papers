@@ -12,9 +12,6 @@ For more details, please check out our survey paper: [A Comprehensive Survey on 
 }
 ```
 
-## Note
-We will update our repository quickly!
-
 ## Contents
 * [Overview of RL-based Agentic Search](#overview-of-rl-based-agentic-search)
 * [Illustrative Framework of RL-based Agentic Search](#illustrative-framework-of-rl-based-agentic-search)
