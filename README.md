@@ -308,6 +308,7 @@ The below table summarizes representative works with corresponding optimization 
 <summary>📊 Click to expand long table (scrollable). </summary>
 
 <div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
+  
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
 | 2025.09 | [AgentGym‑RL: Training LLM Agents for Long‑Horizon Decision Making through Multi‑Turn Reinforcement Learning](https://arxiv.org/abs/2509.08755) | Unified RL‑based Agentic Framework | *arXiv* |  |
