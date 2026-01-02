@@ -255,7 +255,7 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.05 | [Search-r1: Training llms to reason and leverage search engines with reinforcement learning](https://arxiv.org/abs/2503.09516) | Single-agent Optimization | *COLM 2025* | [Code](https://github.com/PeterGriffinJin/Search-R1) |
 | 2025.05 | [ReSearch: learning to reason with search for llms via reinforcement learning](https://arxiv.org/abs/2503.19470) | Single-agent Optimization | *arXiv* |  |
 | 2025.05 | [R1-Searcher++: Incentivizing the dynamic knowledge acquisition of llms via reinforcement learning](https://arxiv.org/abs/2505.17005) | Single-agent Optimization | *arXiv* | [Code](https://github.com/RUCAIBox/R1-Searcher-plus) |
-| 2025.05 | [AutoCoA: advancing end-to-end deep search agents via hierarchical reinforcement learning](https://arxiv.org/abs/2503.07255) | Single-agent Optimization | *arXiv* |  |
+| 2025.05 | [Agent models: Internalizing Chain-of-Action Generation into Reasoning models](https://arxiv.org/abs/2503.06580) | Single-agent Optimization | *arXiv* |  |
 | 2025.05 | [Lucys: a compact reinforcement-learning based deep research web agent](https://arxiv.org/abs/2505.06690) | Single-agent Optimization | *arXiv* |  |
 | 2025.04 | [DeepRAG: Thinking to retrieval step by step for large language models](https://arxiv.org/abs/2502.01142) | Single-agent Optimization | *arXiv* |  |
 | 2025.03 | [StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization](https://arxiv.org/abs/2505.15107) | Single-agent Optimization | *EMNLP 2025 (Main)* | [Code](https://github.com/Zillwang/StepSearch) |
