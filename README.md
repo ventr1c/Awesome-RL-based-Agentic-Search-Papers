@@ -28,6 +28,7 @@ For more details, please check out our survey paper: [A Comprehensive Survey on 
 ## Representative Survey
 | Time  | Paper Title | Venue |
 | :---- | :----------- | :---- |
+| 2026.1 | [Agentic Reasoning for Large Language Models](https://arxiv.org/pdf/2601.12538) | *arXiv* |
 | 2025.10 | [A Comprehensive Survey on Reinforcement Learning-based Agentic Search: Foundations, Roles, Optimizations, Evaluations, and Applications](https://arxiv.org/abs/2510.16724) | *arXiv* |
 | 2025.9 | [Reinforcement Learning Foundations for Deep Research Systems: A Survey](https://arxiv.org/abs/2509.06733) | *arXiv* |
 | 2025.8 | [A Survey of LLM-based Deep Search Agents: Paradigm, Optimization, Evaluation, and Challenges](https://arxiv.org/abs/2508.05668) | *arXiv* |
