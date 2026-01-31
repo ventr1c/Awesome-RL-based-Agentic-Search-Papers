@@ -29,6 +29,7 @@ For more details, please check out our survey paper: [A Comprehensive Survey on 
 | Time  | Paper Title | Venue |
 | :---- | :----------- | :---- |
 | 2026.1 | [Agentic Reasoning for Large Language Models](https://arxiv.org/pdf/2601.12538) | *arXiv* |
+| 2025.12 | [Deep Research: A Systematic Survey](https://arxiv.org/abs/2512.02038) | *arXiv* |
 | 2025.10 | [A Comprehensive Survey on Reinforcement Learning-based Agentic Search: Foundations, Roles, Optimizations, Evaluations, and Applications](https://arxiv.org/abs/2510.16724) | *arXiv* |
 | 2025.9 | [Reinforcement Learning Foundations for Deep Research Systems: A Survey](https://arxiv.org/abs/2509.06733) | *arXiv* |
 | 2025.8 | [A Survey of LLM-based Deep Search Agents: Paradigm, Optimization, Evaluation, and Challenges](https://arxiv.org/abs/2508.05668) | *arXiv* |
@@ -120,6 +121,10 @@ The below table summarizes representative works with corresponding optimization 
 #### Retrieval Control
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.1 | [BAPO: Boundary-Aware Policy Optimization for Reliable Agentic Search](https://arxiv.org/abs/2601.11037) | Adaptive Search Decision; Reliability / IDK Boundary | *arXiv* | [Code](https://github.com/Liushiyu-0709/BAPO-Reliable-Search) |
+| 2026.1 | [Agentic-R: Learning to Retrieve for Agentic Search](https://arxiv.org/abs/2601.11888) | Retriever‑Aware Optimization; Adaptive Search Decision | *arXiv* | [Code](https://github.com/8421BCD/Agentic-R) |
+| 2026.1 | [Agentic Conversational Search with Contextualized Reasoning via Reinforcement Learning](https://arxiv.org/abs/2601.13115) | Conversational Reformulation; Adaptive Search Decision | *arXiv* |  |
+| 2026.1 | [OffSeeker: Online Reinforcement Learning Is Not All You Need for Deep Research Agents](https://arxiv.org/abs/2601.18467) | Search Efficiency; Offline Training | *arXiv* |  |
 | 2025.11 | [Thinker: Training LLMs in Hierarchical Thinking for Deep Search via Multi-Turn Interaction](https://arxiv.org/abs/2511.07943) | Adaptive Search Decision; Search Intensity | *AAAI 2026* | [Code](https://github.com/OpenSPG/KAG-Thinker) |
 | 2025.11 | [MemSearcher: Training LLMs to Reason, Search and Manage Memory via End-to-End Reinforcement Learning](https://arxiv.org/abs/2511.02805) | Adaptive Search Decision; Context & Memory Management | *arXiv* | [Code](https://github.com/icip-cas/MemSearcher) |
 | 2025.09 | [DeepDive: Advancing Deep Search Agents with Knowledge Graphs and Multi-Turn RL](https://arxiv.org/abs/2509.10446) | Adaptive Search Decision; Search Efficiency; Structured Knowledge Navigation | *arXiv* | [Code](https://github.com/THUDM/DeepDive) |
@@ -164,6 +169,8 @@ The below table summarizes representative works with corresponding optimization 
 #### Reasoning–Retrieval Integration
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.1 | [Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards](https://arxiv.org/abs/2601.06021) | Reasoning-Search Interaction; Faithfulness / Citation Reward | *arXiv* | [Code](https://github.com/THUDM/CaRR) |
+| 2026.1 | [ProRAG: Process-Supervised Reinforcement Learning for Retrieval-Augmented Generation](https://arxiv.org/abs/2601.21912) | Reasoning-Search Interaction; Process Supervision | *arXiv* | [Code](https://github.com/lilinwz/ProRAG) |
 | 2025.10 | [GlobalRAG: Enhancing Global Reasoning in Multi-hop Question Answering via Reinforcement Learning](https://arxiv.org/abs/2510.20548) | Reasoning-Search Interaction; Retriever‑Aware Optimization | *arXiv* | [Code](https://github.com/CarnegieBin/GlobalRAG) |
 | 2025.10 | [RECON: Reasoning with Condensation for Efficient Retrieval‑Augmented Generation](https://arxiv.org/abs/2510.10448) | Context & Memory Management | *arXiv* |  |
 | 2025.10 | [Search Self-play: Pushing the Frontier of Agent Capability without Supervision](https://arxiv.org/abs/2510.18821) | Adaptive Search Decision; Self-Play Training | *arXiv* | [Code](https://github.com/Alibaba-Quark/SSP) |
@@ -184,6 +191,7 @@ The below table summarizes representative works with corresponding optimization 
 #### Multi‑Agent Collaboration
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.1 | [PRISMA: RL Guided Two-Stage Policy Optimization for Multi-Agent Architecture in Multi-Hop QA](https://arxiv.org/abs/2601.05465) | Planner-Executor Orchestration | *arXiv* |  |
 | 2025.10 | [In-the-Flow Agentic System Optimization for Effective Planning and Tool Use](https://arxiv.org/abs/2510.05592) | Planner-Executor Orchestration; Multi‑Tool | *arXiv* | [Code](https://github.com/lupantech/AgentFlow) [Project page](https://agentflow.stanford.edu/) |
 | 2025.09 | [AgentGym‑RL: Training LLM Agents for Long‑Horizon Decision Making through Multi‑Turn Reinforcement Learning](https://arxiv.org/abs/2509.08755) | Cooperative Multi-Agent Systems; Multi‑Tool | *arXiv* |  |
 | 2025.09 | [SIRAG: Towards Stable and Interpretable RAG with a Process‑Supervised Multi‑Agent Framework](https://arxiv.org/abs/2509.18167) | Cooperative Multi-Agent Systems | *arXiv* |  |
@@ -198,6 +206,10 @@ The below table summarizes representative works with corresponding optimization 
 #### Tool and Knowledge Integration
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.1 | [SCRIBE: Structured Mid-Level Supervision for Tool-Using Language Models](https://arxiv.org/abs/2601.03555) | Multi‑Tool; Mid‑Level Reward Modeling (Skill Prototypes) | *arXiv* |  |
+| 2026.1 | [AT$^2$PO: Agentic Turn-based Policy Optimization via Tree Search](https://arxiv.org/abs/2601.04767) | Multi‑Turn Agentic RL; Credit Assignment | *arXiv* | [Code](https://github.com/zzfoutofspace/ATPO) |
+| 2026.1 | [PEARL: Plan Exploration and Adaptive Reinforcement Learning for Multihop Tool Use](https://arxiv.org/abs/2601.20439) | Multi‑Tool; Planner‑Executor Orchestration | *PRICAI 2025* |  |
+| 2025.12 | [SenseNova-MARS: Empowering Multimodal Agentic Reasoning and Search via Reinforcement Learning](https://arxiv.org/abs/2512.24330) | Multi‑Tool; Multi‑Modal | *arXiv* |  |
 | 2025.11 | [Agent‑R1: Training Powerful LLM Agents with End‑to‑End Reinforcement Learning](https://arxiv.org/abs/2511.14460) | Multi‑Tool | *arXiv* | [Code (community)](https://github.com/0russwest0/Agent-R1) |
 | 2025.09 | [Empowering LLM Tool Invocation with Tool-call Reward Model](https://openreview.net/forum?id=LnBEASInVr) | Multi‑Tool | *ICLR 2026 Submission* |  |
 | 2025.09 | [VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use](https://arxiv.org/abs/2509.01055) | Multi‑Tool | *arXiv* | [Code](https://github.com/TIGER-AI-Lab/verl-tool) |
