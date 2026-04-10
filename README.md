@@ -48,7 +48,6 @@ The below table summarizes representative works with corresponding optimization 
 <details>
 <summary>📊 Click to expand long table (scrollable). </summary>
 
-<div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
 | Method | RL Func. Role | Cold Start? | Training Env. | RL Alg. | Reward Type | Reward Func. | Opt. Scope | Dataset |
 |---|---|---|---|---|---|---|---|---|
 | [APEX-Searcher](https://arxiv.org/abs/2603.13853) | Adapt-Search<br>P–E Orches. | - | Real-world | GRPO | Rule-based ORM | Decomposition F1 | Module-level | [[HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
@@ -128,7 +127,6 @@ The below table summarizes representative works with corresponding optimization 
 | [Verl](https://github.com/verl-project/verl) | Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
 | [VerlTool](https://arxiv.org/abs/2509.01055) | Multi tool | - | - | - | - | - | Unified RL Agentic Framework | - |
 
-</div>
 </details>
 
 
@@ -286,7 +284,6 @@ The below table summarizes representative works with corresponding optimization 
 <details>
 <summary>📊 Click to expand long table (scrollable). </summary>
 
-<div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
 | 2026.3 | [APEX-Searcher: Augmenting LLMs' Search Capabilities through Agentic Planning and Execution](https://arxiv.org/abs/2603.13853) | Single-agent Optimization | *arXiv* |  |
@@ -350,14 +347,12 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.02 | [DeepRAG: Thinking to Retrieval Step by Step for Large Language Models](https://arxiv.org/abs/2502.01142) | Single‑agent Optimization | *arXiv* |  |
 | 2025.01 | [Improving Retrieval‑Augmented Generation through Multi‑Agent Reinforcement Learning](https://arxiv.org/abs/2501.15228) | Multi‑agent Coordination | *NeurIPS 2025* | [Code](https://github.com/chenyiqun/MMOA-RAG) |
 | 2024.10 | [DeepNote: Note-Centric Deep Retrieval-Augmented Generation](https://arxiv.org/abs/2410.08821) | Single‑agent Optimization | *EMNLP 2025 (Findings)* |  |
-</div>
 </details>
 
 #### Step-level
 <details>
 <summary>📊 Click to expand long table (scrollable). </summary>
 
-<div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
 | 2026.3 | [Evaluate-as-Action: Self-Evaluated Process Rewards for Retrieval-Augmented Agents](https://arxiv.org/abs/2603.09203) | Step‑level Optimization | *arXiv* |  |
@@ -372,27 +367,22 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.05 | [Reinforced Internal‑External Knowledge Synergistic Reasoning for Efficient Adaptive Search Agent](https://arxiv.org/abs/2505.07596) | Step‑level Optimization | *arXiv* |  |
 | 2025.04 | [ReZero: Enhancing LLM Search Ability by Trying One‑More‑Time](https://arxiv.org/abs/2504.11001) | Step‑level Optimization | *arXiv* | [Code](https://github.com/janhq/ReZero) |
 | 2025.04 | [Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/abs/2504.04736) | Step‑level Optimization | *arXiv* |  |
-</div>
 </details>
 
 #### Module-level
 <details>
 <summary>📊 Click to expand long table (scrollable). </summary>
 
-<div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
 | 2025.08 | [AI-SearchPlanner: Modular Agentic Search via Pareto-Optimal Multi-Objective Reinforcement Learning](https://arxiv.org/abs/2508.20368) | Module-level Optimization | *arXiv* |  |
 | 2025.05 | [s3: You Don’t Need That Much Data to Train a Search Agent via RL](https://arxiv.org/abs/2505.14146) | Module-level Optimization | *arXiv* |  |
 | 2025.04 | [Deepresearcher: Scaling deep research via reinforcement learning in real-world environments](https://arxiv.org/abs/2504.03160) | Module-level Optimization | *arXiv* | [Code](https://github.com/GAIR-NLP/DeepResearcher) |
-</div>
 </details>
 
 #### System-level
 <details>
 <summary>📊 Click to expand long table (scrollable). </summary>
-
-<div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
   
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
@@ -401,7 +391,6 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.08 | [Chain‑of‑Agents: End‑to‑End Agent Foundation Models via Multi‑Agent Distillation and Agentic RL](https://arxiv.org/abs/2508.13167) | Unified RL‑based Agentic Framework | *arXiv* |  |
 | 2025.02 | [RAG‑Gym: Systematic Optimization of Language Agents for Retrieval‑Augmented Generation](https://arxiv.org/abs/2502.13957) | Unified RL‑based Agentic Framework | *arXiv* |  |
 | 2024.09 | [HybridFlow: A Flexible and Efficient RLHF Framework](https://arxiv.org/abs/2409.19256) | Unified RL‑based Agentic Framework (Verl) | *arXiv* |  |
-</div>
 </details>
 
 ## Evaluation
