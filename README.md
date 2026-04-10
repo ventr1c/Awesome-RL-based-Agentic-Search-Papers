@@ -31,7 +31,6 @@ We are actively maintaining this repository!
 | Time  | Paper Title | Venue |
 | :---- | :----------- | :---- |
 | 2026.3 | [SoK: Agentic Retrieval-Augmented Generation (RAG): Taxonomy, Architectures, Evaluation, and Research Directions](https://arxiv.org/abs/2603.07379) | *arXiv* |
-| 2026.3 | [Deep Research of Deep Research: From Transformer to Agent, From AI to AI for Science](https://arxiv.org/abs/2603.28361) | *arXiv* |
 | 2026.1 | [Agentic Reasoning for Large Language Models](https://arxiv.org/abs/2601.12538) | *arXiv* |
 | 2025.12 | [Deep Research: A Systematic Survey](https://arxiv.org/abs/2512.02038) | *arXiv* |
 | 2025.10 | [A Comprehensive Survey on Reinforcement Learning-based Agentic Search: Foundations, Roles, Optimizations, Evaluations, and Applications](https://arxiv.org/abs/2510.16724) | *arXiv* |
@@ -50,18 +49,22 @@ The below table summarizes representative works with corresponding optimization 
 <summary>📊 Click to expand long table (scrollable). </summary>
 
 <div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
-
 | Method | RL Func. Role | Cold Start? | Training Env. | RL Alg. | Reward Type | Reward Func. | Opt. Scope | Dataset |
 |---|---|---|---|---|---|---|---|---|
 | [APEX-Searcher](https://arxiv.org/abs/2603.13853) | Adapt-Search<br>P–E Orches. | - | Real-world | GRPO | Rule-based ORM | Decomposition F1 | Module-level | [[HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
 | [Search More, Think Less](https://arxiv.org/abs/2602.22675) | Search Efficiency | ✓ | Real-world | Modified RLOO | ORM | LLM-Judge<br>Format / Tool-use | Single-agent | [[BrowseComp-en](https://arxiv.org/abs/2504.12516), [BrowseComp-zh](https://arxiv.org/abs/2504.19314), [GAIA](https://arxiv.org/abs/2311.12983), [XBench](https://xbench.org/), [DeepResearchBench](https://arxiv.org/abs/2506.11763), WebWalkerQA] |
-| [DAS](https://arxiv.org/abs/2602.03304) | Search Efficiency | ✗ | Real-world | Preference Optimization | - | Decision Boundary Alignment | Step-level | [[NQ](https://aclanthology.org/Q19-1026/), [HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060)] |
 | [SmartSearch](https://arxiv.org/abs/2601.04888) | Conv-Reform.<br>R-Aware Opt. | ✓ | Real-world | GRPO | PRM | Query Novelty<br>Query Usefulness | Step-level | [[HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
 | [Evaluate-as-Action](https://arxiv.org/abs/2603.09203) | R–S Inter. | - | Real-world | GRPO | PRM | Self-Evaluation Reward | Step-level | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [PopQA](https://arxiv.org/abs/2212.10511), [HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
 | [SE-Search](https://arxiv.org/abs/2603.03293) | R–S Inter.<br>Ctx-Mem. | - | Real-world | GRPO | ORM+PRM | Query Reward<br>Memory Reward<br>Answer Reward | Step-level | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [PopQA](https://arxiv.org/abs/2212.10511), [HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
 | [Search-P1](https://arxiv.org/abs/2602.22576) | R–S Inter.<br>Search Efficiency | - | Real-world | GRPO<br>PPO | ORM+PRM | Path Reward<br>Answer Reward | Step-level | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [PopQA](https://arxiv.org/abs/2212.10511), [HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350), AD-QA] |
 | [SynPlanResearch-R1](https://arxiv.org/abs/2603.07853) | Adapt-Search<br>Multi-tool | ✓ | Real-world | GRPO | - | - | Single-agent | [[HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350), [GAIA](https://arxiv.org/abs/2311.12983), WebWalkerQA, GPQA] |
 | [KARL](https://arxiv.org/abs/2603.05218) | Adapt-Search<br>Search Efficiency<br>Ctx-Mem. | - | Real-world | OAPL | - | - | Single-agent | [[BrowseComp-Plus](https://arxiv.org/abs/2508.06600), TREC-Biogen, FinanceBench, QAMPARI, Freshstack, PMBench] |
+| [SearchGym](https://arxiv.org/abs/2601.14615) ([Code](https://github.com/JIA-Lab-research/SearchGym)) | Adapt-Search | - | Simulated | SearchGym-RL | - | Purified Feedback<br>Curriculum | Single-agent | - |
+| [SIGHT](https://arxiv.org/abs/2602.11551) | Adapt-Search<br>R–S Inter.<br>Search Efficiency | - | Real-world | GRPO | - | SES<br>Correctness<br>Information Gain | Single-agent | - |
+| [Search-R2](https://arxiv.org/abs/2602.03647) | R–S Inter. | - | Real-world | - | PRM | Dense Process Reward | Single-agent | - |
+| [WideSeek-R1](https://arxiv.org/abs/2602.04634) | Search Efficiency<br>Cooperative Multi-Agent Systems | - | Real-world | MARL | - | - | Multi-agent | WideSearch |
+| [M-ASK](https://arxiv.org/abs/2601.04703) ([Code](https://github.com/chenyiqun/M-ASK)) | P–E Orches.<br>Ctx-Mem. | - | Real-world | - | - | Turn-level Reward | Multi-agent | - |
+| [PRAISE](https://arxiv.org/abs/2604.03675) | Search Efficiency<br>Step-level | - | Real-world | - | PRM | Intermediate Step Reward | Step-level | - |
 | [Search-R1](https://arxiv.org/abs/2503.09516) | Adapt-Search | ✗ | Real-world | PPO<br>GRPO | Rule-based ORM | Answer EM | Single-agent | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [PopQA](https://arxiv.org/abs/2212.10511), [HotpotQA](https://arxiv.org/abs/1809.09600), [MuSiQue](https://arxiv.org/abs/2108.00573), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
 | [ReSearch](https://arxiv.org/abs/2503.19470) | Adapt-Search | ✗ | Real-world | GRPO | Rule-based ORM | Format<br>Answer F1 | Single-agent | [[HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
 | [AutoCoA](https://arxiv.org/abs/2503.06580) | Adapt-Search | ✓ | Real-world | GRPO | Rule-based ORM | Format<br>Answer EM | Single-agent | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [PopQA](https://arxiv.org/abs/2212.10511), [HotpotQA](https://arxiv.org/abs/1809.09600), [MuSiQue](https://arxiv.org/abs/2108.00573), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
@@ -134,11 +137,12 @@ The below table summarizes representative works with corresponding optimization 
 #### Retrieval Control
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
-| 2026.3 | [APEX-Searcher: Augmenting LLMs' Search Capabilities through Agentic Planning and Execution](https://arxiv.org/abs/2603.13853) | Adaptive Search Decision; Planner-Executor Orchestration | *WWW 2026* |  |
+| 2026.3 | [APEX-Searcher: Augmenting LLMs' Search Capabilities through Agentic Planning and Execution](https://arxiv.org/abs/2603.13853) | Adaptive Search Decision; Planner-Executor Orchestration | *arXiv* |  |
 | 2026.3 | [Meta-Reinforcement Learning with Self-Reflection for Agentic Search](https://arxiv.org/abs/2603.11327) | Adaptive Search Decision; Self-Reflection | *arXiv* | [Code](https://github.com/tengxiao1/MR-Search) |
 | 2026.2 | [Search More, Think Less: Rethinking Long-Horizon Agentic Search for Efficiency and Generalization](https://arxiv.org/abs/2602.22675) | Adaptive Search Decision; Search Efficiency | *arXiv* | [Code](https://github.com/OPPO-PersonalAI/SMTL) |
 | 2026.3 | [KARL: Knowledge Agents via Reinforcement Learning](https://arxiv.org/abs/2603.05218) | Adaptive Search Decision; Search Efficiency; Context & Memory Management | *arXiv* |  |
-| 2026.2 | [To Search or Not to Search: Aligning the Decision Boundary of Deep Search Agents via Causal Intervention](https://arxiv.org/abs/2602.03304) | Adaptive Search Decision; Search Efficiency | *WWW 2026* |  |
+| 2026.2 | [SIGHT: Reinforcement Learning with Self-Evidence and Information-Gain Diverse Branching for Search Agent](https://arxiv.org/abs/2602.11551) | Adaptive Search Decision; Search Efficiency | *arXiv* |  |
+| 2026.1 | [SearchGym: Bootstrapping Real-World Search Agents via Cost-Effective and High-Fidelity Environment Simulation](https://arxiv.org/abs/2601.14615) | Adaptive Search Decision; Sim-to-Real / Environment Simulation | *arXiv* | [Code](https://github.com/JIA-Lab-research/SearchGym) |
 | 2026.2 | [How to Train Your Deep Research Agent? Prompt, Reward, and Policy Optimization in Search-R1](https://arxiv.org/abs/2602.19526) | Adaptive Search Decision; Search Efficiency | *arXiv* |  |
 | 2026.2 | [REDSearcher: A Scalable and Cost-Efficient Framework for Long-Horizon Search Agents](https://arxiv.org/abs/2602.14234) | Adaptive Search Decision; Search Efficiency | *arXiv* |  |
 | 2026.2 | [Agent-Omit: Training Efficient LLM Agents for Adaptive Thought and Observation Omission via Agentic Reinforcement Learning](https://arxiv.org/abs/2602.04284) | Search Efficiency | *arXiv* |  |
@@ -179,6 +183,7 @@ The below table summarizes representative works with corresponding optimization 
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
 | 2026.1 | [SmartSearch: Process Reward-Guided Query Refinement for Search Agents](https://arxiv.org/abs/2601.04888) | Retriever‑Aware Optimization; Query Refinement | *SIGIR 2026* | [Code](https://github.com/RUC-NLPIR/SmartSearch) |
+| 2026.4 | [Learning to Retrieve from Agent Trajectories](https://arxiv.org/abs/2604.04949) | Retriever‑Aware Optimization | *arXiv* |  |
 | 2026.1 | [When should I search more: Adaptive Complex Query Optimization with Reinforcement Learning](https://arxiv.org/abs/2601.21208) | Retriever‑Aware Optimization; Query Reformulation | *arXiv* |  |
 | 2025.11 | [CriticSearch: Fine-Grained Credit Assignment for Search Agents via a Retrospective Critic](https://arxiv.org/abs/2511.12159) | Retriever‑Aware Optimization | *arXiv* |  |
 | 2025.09 | [WebExplorer: Explore and Evolve for Training Long‑Horizon Web Agents](https://arxiv.org/abs/2509.06501) | Context & Memory Management; Convsational Reformulation | *arXiv* |  |
@@ -199,6 +204,8 @@ The below table summarizes representative works with corresponding optimization 
 | :---- | :----------- | :---- | :---- | :---- |
 | 2026.3 | [Evaluate-as-Action: Self-Evaluated Process Rewards for Retrieval-Augmented Agents](https://arxiv.org/abs/2603.09203) | Reasoning-Search Interaction; Process Supervision | *arXiv* |  |
 | 2026.3 | [SE-Search: Self-Evolving Search Agent via Memory and Dense Reward](https://arxiv.org/abs/2603.03293) | Reasoning-Search Interaction; Context & Memory Management | *arXiv* |  |
+| 2026.2 | [SIGHT: Reinforcement Learning with Self-Evidence and Information-Gain Diverse Branching for Search Agent](https://arxiv.org/abs/2602.11551) | Reasoning-Search Interaction; Search Efficiency | *arXiv* |  |
+| 2026.2 | [Search-R2: Enhancing Search-Integrated Reasoning via Actor-Refiner Collaboration](https://arxiv.org/abs/2602.03647) | Reasoning-Search Interaction; Process Supervision | *arXiv* |  |
 | 2026.2 | [Search-P1: Path-Centric Reward Shaping for Stable and Efficient Agentic RAG Training](https://arxiv.org/abs/2602.22576) | Reasoning-Search Interaction; Reward Shaping | *arXiv* |  |
 | 2026.1 | [ProRAG: Process-Supervised Reinforcement Learning for Retrieval-Augmented Generation](https://arxiv.org/abs/2601.21912) | Reasoning-Search Interaction; Process Supervision | *arXiv* | [Code](https://github.com/lilinwz/ProRAG) |
 | 2026.1 | [Chaining the Evidence: Robust Reinforcement Learning for Deep Search Agents with Citation-Aware Rubric Rewards](https://arxiv.org/abs/2601.06021) | Reasoning-Search Interaction; Faithfulness / Citation Reward | *arXiv* | [Code](https://github.com/THUDM/CaRR) |
@@ -226,6 +233,8 @@ The below table summarizes representative works with corresponding optimization 
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
 | 2026.1 | [PRISMA: Reinforcement Learning Guided Two-Stage Policy Optimization in Multi-Agent Architecture for Open-Domain Multi-Hop Question Answering](https://arxiv.org/abs/2601.05465) | Planner-Executor Orchestration | *arXiv* |  |
+| 2026.2 | [WideSeek-R1: Exploring Width Scaling for Broad Information Seeking via Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2602.04634) | Cooperative Multi-Agent Systems | *arXiv* |  |
+| 2026.1 | [Beyond Monolithic Architectures: A Multi-Agent Search and Knowledge Optimization Framework for Agentic Search](https://arxiv.org/abs/2601.04703) | Planner-Executor Orchestration; Context & Memory Management | *arXiv* | [Code](https://github.com/chenyiqun/M-ASK) |
 | 2025.10 | [In-the-Flow Agentic System Optimization for Effective Planning and Tool Use](https://arxiv.org/abs/2510.05592) | Planner-Executor Orchestration; Multi‑Tool | *arXiv* | [Code](https://github.com/lupantech/AgentFlow) [Project page](https://agentflow.stanford.edu/) |
 | 2025.09 | [AgentGym‑RL: Training LLM Agents for Long‑Horizon Decision Making through Multi‑Turn Reinforcement Learning](https://arxiv.org/abs/2509.08755) | Cooperative Multi-Agent Systems; Multi‑Tool | *arXiv* |  |
 | 2025.09 | [SIRAG: Towards Stable and Interpretable RAG with a Process‑Supervised Multi‑Agent Framework](https://arxiv.org/abs/2509.18167) | Cooperative Multi-Agent Systems | *arXiv* |  |
@@ -241,8 +250,7 @@ The below table summarizes representative works with corresponding optimization 
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
 | 2026.3 | [SynPlanResearch-R1: Encouraging Tool Exploration for Deep Research with Synthetic Plans](https://arxiv.org/abs/2603.07853) | Multi‑Tool; Adaptive Search Decision | *arXiv* | [Code](https://github.com/HansiZeng/syn-plan-research) |
-| 2026.4 | [ORBIT: Scalable and Verifiable Data Generation for Search Agents on a Tight Budget](https://arxiv.org/abs/2604.01195) | Task / Data Synthesis for Search Agents | *arXiv* |  |
-| 2026.1 | [SAGE: Steerable Agentic Data Generation for Deep Search with Execution Feedback](https://arxiv.org/abs/2601.18202) | Task / Curriculum Synthesis for Deep Search | *Findings of EACL 2026* | [Code](https://github.com/carriex/sage) |
+| 2026.4 | [Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search](https://arxiv.org/abs/2604.08124) | Training Data / Experience Curation for Search Agents | *arXiv* |  |
 | 2026.3 | [VSearcher: Long-Horizon Multimodal Search Agent via Reinforcement Learning](https://arxiv.org/abs/2603.02795) | Multi‑Tool; Multi‑Modal | *arXiv* |  |
 | 2026.3 | [MM-DeepResearch: A Simple and Effective Multimodal Agentic Search Baseline](https://arxiv.org/abs/2603.01050) | Multi‑Tool; Multi‑Modal | *arXiv* | [Code](https://github.com/HJYao00/MM-DeepResearch) |
 | 2026.3 | [Improving Search Agent with One Line of Code](https://arxiv.org/abs/2603.10069) | Training Stability (TARL / PPO) | *arXiv* |  |
@@ -279,10 +287,9 @@ The below table summarizes representative works with corresponding optimization 
 <summary>📊 Click to expand long table (scrollable). </summary>
 
 <div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
-
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
-| 2026.3 | [APEX-Searcher: Augmenting LLMs' Search Capabilities through Agentic Planning and Execution](https://arxiv.org/abs/2603.13853) | Single-agent Optimization | *WWW 2026* |  |
+| 2026.3 | [APEX-Searcher: Augmenting LLMs' Search Capabilities through Agentic Planning and Execution](https://arxiv.org/abs/2603.13853) | Single-agent Optimization | *arXiv* |  |
 | 2026.3 | [Meta-Reinforcement Learning with Self-Reflection for Agentic Search](https://arxiv.org/abs/2603.11327) | Single-agent Optimization | *arXiv* | [Code](https://github.com/tengxiao1/MR-Search) |
 | 2026.2 | [Search More, Think Less: Rethinking Long-Horizon Agentic Search for Efficiency and Generalization](https://arxiv.org/abs/2602.22675) | Single-agent Optimization | *arXiv* | [Code](https://github.com/OPPO-PersonalAI/SMTL) |
 | 2026.3 | [KARL: Knowledge Agents via Reinforcement Learning](https://arxiv.org/abs/2603.05218) | Single-agent Optimization | *arXiv* |  |
@@ -290,6 +297,9 @@ The below table summarizes representative works with corresponding optimization 
 | 2026.3 | [VSearcher: Long-Horizon Multimodal Search Agent via Reinforcement Learning](https://arxiv.org/abs/2603.02795) | Single-agent Optimization | *arXiv* |  |
 | 2026.3 | [MM-DeepResearch: A Simple and Effective Multimodal Agentic Search Baseline](https://arxiv.org/abs/2603.01050) | Single-agent Optimization | *arXiv* | [Code](https://github.com/HJYao00/MM-DeepResearch) |
 | 2026.3 | [ProtRLSearch: A Multi-Round Multimodal Protein Search Agent with Large Language Models Trained via Reinforcement Learning](https://arxiv.org/abs/2603.01464) | Single-agent Optimization | *arXiv* |  |
+| 2026.2 | [SIGHT: Reinforcement Learning with Self-Evidence and Information-Gain Diverse Branching for Search Agent](https://arxiv.org/abs/2602.11551) | Single-agent Optimization | *arXiv* |  |
+| 2026.2 | [Search-R2: Enhancing Search-Integrated Reasoning via Actor-Refiner Collaboration](https://arxiv.org/abs/2602.03647) | Single-agent Optimization | *arXiv* |  |
+| 2026.1 | [SearchGym: Bootstrapping Real-World Search Agents via Cost-Effective and High-Fidelity Environment Simulation](https://arxiv.org/abs/2601.14615) | Single-agent Optimization | *arXiv* | [Code](https://github.com/JIA-Lab-research/SearchGym) |
 | 2025.11 | [Thinker: Training LLMs in Hierarchical Thinking for Deep Search via Multi-Turn Interaction](https://arxiv.org/abs/2511.07943) | Single-agent Optimization | *AAAI 2026* | [Code](https://github.com/OpenSPG/KAG-Thinker) |
 | 2025.11 | [MemSearcher: Training LLMs to Reason, Search and Manage Memory via End-to-End Reinforcement Learning](https://arxiv.org/abs/2511.02805) | Single-agent Optimization | *arXiv* | [Code](https://github.com/icip-cas/MemSearcher) |
 | 2025.09 | [DeepDive: Advancing Deep Search Agents with Knowledge Graphs and Multi-Turn RL](https://arxiv.org/abs/2509.10446) | Single-agent Optimization | *arXiv* | [Code](https://github.com/THUDM/DeepDive) |
@@ -332,6 +342,8 @@ The below table summarizes representative works with corresponding optimization 
 | 2025.1 | [Improving Retrieval-Augmented Generation through Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2501.15228) | Multi-agent Coordination | *NeurIPS 2025* | [Code](https://github.com/chenyiqun/MMOA-RAG) |
 | 2025.06 | [Coordinating Search-Informed Reasoning and Reasoning-Guided Search in Claim Verification](https://arxiv.org/abs/2506.07528) | Multi-agent Coordination | *arXiv* |  |
 | 2025.9 | [SIRAG: Towards Stable and Interpretable RAG with a Process-Supervised Multi-Agent Framework](https://arxiv.org/abs/2509.18167) | Multi-agent Coordination | *arXiv* |  |
+| 2026.2 | [WideSeek-R1: Exploring Width Scaling for Broad Information Seeking via Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2602.04634) | Multi-agent Coordination | *arXiv* |  |
+| 2026.1 | [Beyond Monolithic Architectures: A Multi-Agent Search and Knowledge Optimization Framework for Agentic Search](https://arxiv.org/abs/2601.04703) | Multi-agent Coordination | *arXiv* | [Code](https://github.com/chenyiqun/M-ASK) |
 | 2025.8 | [MAO-ARAG: Multi-Agent Orchestration for Adaptive Retrieval-Augmented Generation](https://arxiv.org/abs/2508.01005) | Multi-agent Coordination | *arXiv* |  |
 | 2025.1 | [MMOA-RAG: Improving Retrieval-Augmented Generation through Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2501.15228) | Multi-agent Coordination | *NeurIPS 2025* | [Code](https://github.com/chenyiqun/MMOA-RAG) |
 | 2025.8 | [OPERA: A Reinforcement Learning–Enhanced Orchestrated Planner-Executor Architecture for Reasoning-Oriented Multi-Hop Retrieval](https://arxiv.org/abs/2508.16438) | Multi-agent Coordination | *arXiv* |  |
@@ -346,10 +358,10 @@ The below table summarizes representative works with corresponding optimization 
 <summary>📊 Click to expand long table (scrollable). </summary>
 
 <div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
-
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
 | 2026.3 | [Evaluate-as-Action: Self-Evaluated Process Rewards for Retrieval-Augmented Agents](https://arxiv.org/abs/2603.09203) | Step‑level Optimization | *arXiv* |  |
+| 2026.4 | [PRAISE: Prefix-Based Rollout Reuse in Agentic Search Training](https://arxiv.org/abs/2604.03675) | Step‑level Optimization | *arXiv* |  |
 | 2026.2 | [Search-P1: Path-Centric Reward Shaping for Stable and Efficient Agentic RAG Training](https://arxiv.org/abs/2602.22576) | Step‑level Optimization | *arXiv* |  |
 | 2025.10 | [Beyond Correctness: Rewarding Faithful Reasoning in Retrieval‑Augmented Generation](https://arxiv.org/abs/2510.13272) | Step‑level Optimization | *arXiv* |  |
 | 2025.08 | [Atom‑Searcher: Enhancing Agentic Deep Research via Fine‑Grained Atomic Thought Reward](https://arxiv.org/abs/2508.12800) | Step‑level Optimization | *arXiv* | [Code](https://github.com/antgroup/Research-Venus) |
@@ -368,7 +380,6 @@ The below table summarizes representative works with corresponding optimization 
 <summary>📊 Click to expand long table (scrollable). </summary>
 
 <div style="overflow-x: auto; white-space: nowrap; font-size: 90%;">
-
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
 | 2025.08 | [AI-SearchPlanner: Modular Agentic Search via Pareto-Optimal Multi-Objective Reinforcement Learning](https://arxiv.org/abs/2508.20368) | Module-level Optimization | *arXiv* |  |
@@ -407,35 +418,41 @@ Below is a compact checklist of commonly used evaluation signals for RL-based ag
 ### Recent Evaluation / Benchmarking Papers (Deep Research / Agentic Search)
 | Time | Paper Title | Focus | Venue |
 | :---- | :----------- | :---- | :---- |
+| 2026.3 | [VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents](https://arxiv.org/abs/2603.16289) | Visual-Native Multimodal Browsing Benchmark | *CVPR 2026* |
 | 2026.3 | [MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome](https://arxiv.org/abs/2603.28407) | Multimodal Deep Research Benchmark + Process/Outcome Evaluation | *arXiv* |
 | 2026.3 | [Evaluating the Search Agent in a Parallel World](https://arxiv.org/abs/2603.04751) | Parallel-World Interactive Benchmark (MPW-Bench) | *arXiv* |
-| 2026.3 | [VisBrowse-Bench: Benchmarking Visual-Native Search for Multimodal Browsing Agents](https://arxiv.org/abs/2603.16289) | Visual-Native Multimodal Browsing Benchmark | *CVPR 2026* |
 | 2026.3 | [Total Recall QA: A Verifiable Evaluation Suite for Deep Research Agents](https://arxiv.org/abs/2603.18516) | Verifiable Total-Recall QA Benchmark | *arXiv* |
 | 2026.3 | [LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos](https://arxiv.org/abs/2603.14468) | Agentic Multi-hop Video Search Benchmark | *arXiv* |
 | 2026.3 | [DeepFact: Co-Evolving Benchmarks and Agents for Deep Research Factuality](https://arxiv.org/abs/2603.05912) | Claim-Level Factuality Benchmark + Verifier | *arXiv* |
 | 2026.3 | [KARL: Knowledge Agents via Reinforcement Learning](https://arxiv.org/abs/2603.05218) | Multi-Capability Grounded Reasoning Benchmark Suite (KARLBench) | *arXiv* |
 | 2026.3 | [DeepResearch-9K: A Challenging Benchmark Dataset of Deep-Research Agent](https://arxiv.org/abs/2603.01152) | Benchmark Dataset + Open Training Framework | *arXiv* |
 | 2026.2 | [DRACO: a Cross-Domain Benchmark for Deep Research Accuracy, Completeness, and Objectivity](https://arxiv.org/abs/2602.11685) | Cross-Domain Deep Research Benchmark | *arXiv* |
+| 2026.2 | [DREAM: Deep Research Evaluation with Agentic Metrics](https://arxiv.org/abs/2602.18940) | Agentic Evaluation Protocol / Capability-Parity Metrics | *arXiv* |
+| 2026.2 | [Wiki Live Challenge: Challenging Deep Research Agents with Expert-Level Wikipedia Articles](https://arxiv.org/abs/2602.01590) | Live Wikipedia-Writing Benchmark | *arXiv* |
 | 2026.2 | [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) | Retriever / Ranker Analysis for Deep Research | *arXiv* |
 | 2026.2 | [SAGE: Benchmarking and Improving Retrieval for Deep Research Agents](https://arxiv.org/abs/2602.05975) | Retrieval Benchmark + Strong Baselines | *arXiv* |
 | 2026.2 | [W&D: Scaling Parallel Tool Calling for Efficient Deep Research Agents](https://arxiv.org/abs/2602.07359) | Parallel Tool Calling (Width) vs Turns (Depth) | *arXiv* |
 | 2026.1 | [ScholarGym: Benchmarking Large Language Model Capabilities in the Information-Gathering Stage of Deep Research](https://arxiv.org/abs/2601.21654) | Academic Literature Information-Gathering Benchmark | *arXiv* |
 | 2026.1 | [DeepSearchQA: Bridging the Comprehensiveness Gap for Deep Research Agents](https://arxiv.org/abs/2601.20975) | Multi-Step Deep Research QA Benchmark | *arXiv* |
-| 2026.1 | [Can Deep Research Agents Retrieve and Organize? Evaluating the Synthesis Gap with Expert Taxonomies](https://arxiv.org/abs/2601.12369) | Literature Synthesis / Taxonomy Benchmark (TaxoBench) | *arXiv* |
-| 2026.1 | [Watching, Reasoning, and Searching: A Video Deep Research Benchmark on Open Web for Agentic Video Reasoning](https://arxiv.org/abs/2601.06943) | Video Deep Research Benchmark (VideoDR) | *arXiv* |
+| 2026.1 | [IDRBench: Interactive Deep Research Benchmark](https://arxiv.org/abs/2601.06676) | Interactive Deep Research Benchmark | *arXiv* |
+| 2026.1 | [DR-Arena: an Automated Evaluation Framework for Deep Research Agents](https://arxiv.org/abs/2601.10504) | Dynamic Automated Evaluation Framework | *arXiv* |
+| 2026.1 | [DeepResearch Bench II: Diagnosing Deep Research Agents via Rubrics from Expert Report](https://arxiv.org/abs/2601.08536) | Rubric-Based Expert-Report Benchmark | *arXiv* |
+| 2026.1 | [DeepResearchEval: An Automated Framework for Deep Research Task Construction and Agentic Evaluation](https://arxiv.org/abs/2601.09688) | Automated Task Construction + Agentic Evaluation | *arXiv* |
 | 2026.1 | [Agentic Search in the Wild: Intents and Trajectory Dynamics from 14M+ Real Search Requests](https://arxiv.org/abs/2601.17617) | Real‑World Agentic Search Logs / Trajectory Analysis | *arXiv* |
+| 2025.8 | [DeepScholar-Bench: A Live Benchmark and Automated Evaluation for Generative Research Synthesis](https://arxiv.org/abs/2508.20033) | Live Research-Synthesis Benchmark + Automated Evaluation | *arXiv* |
+| 2025.8 | [ReportBench: Evaluating Deep Research Agents via Academic Survey Tasks](https://arxiv.org/abs/2508.15804) | Academic Survey-Task Benchmark | *arXiv* |
+| 2025.5 | [DeepResearchGym: A Free, Transparent, and Reproducible Evaluation Sandbox for Deep Research](https://arxiv.org/abs/2505.19253) | Reproducible Evaluation Sandbox / Search API | *arXiv* |
 
 ### Datasets
 <!-- The survey groups evaluation datasets by the knowledge source and interaction setting:
 
 <details>
 <summary>📚 Click to expand dataset taxonomy table (from the survey). </summary> -->
-
 | Category | Datasets |
 |---|---|
 | Knowledge Source | [wiki-dump](https://dumps.wikimedia.org/backup-index.html), [Common Crawl](https://commoncrawl.org/overview), [KILT](https://arxiv.org/abs/2009.02252), [PubMed](https://pubmed.ncbi.nlm.nih.gov/about/), [arXiv](https://info.arxiv.org/about/index.html) |
 | Knowledge-Intensive QA | [NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [PopQA](https://arxiv.org/abs/2212.10511), [CAG](https://aclanthology.org/2024.emnlp-main.1109/), [C-SimpleQA](https://arxiv.org/abs/2411.07140), [SuperGPQA](https://arxiv.org/abs/2502.14739)<br>[BRIGHT](https://arxiv.org/abs/2407.12883), [SealQA](https://arxiv.org/abs/2506.01062), [BLUR](https://arxiv.org/abs/2503.19193), [NaturalReasoning](https://arxiv.org/abs/2502.13124)<br>[FEVER](https://aclanthology.org/N18-1074/), [EX-FEVER](https://aclanthology.org/2024.findings-acl.556/), [FEVEROUS](https://arxiv.org/abs/2106.05707), [FactBench](https://arxiv.org/abs/2410.22257), [RealFactBench](https://arxiv.org/abs/2506.12538), [LongFact](https://arxiv.org/abs/2403.18802), [FRAMES](https://aclanthology.org/2025.naacl-long.243/), [RAG-Bench](https://arxiv.org/abs/2407.11005)<br>[BEIR](https://arxiv.org/abs/2104.08663), [AmbigQA](https://arxiv.org/abs/2004.10645), [MetaQA](https://arxiv.org/abs/1709.04071), [WebQuestions](https://aclanthology.org/D13-1160/), [CWQ](https://arxiv.org/abs/1803.06643), [CheckWhy](https://aclanthology.org/2024.acl-long.835/), [BeerQA](https://aclanthology.org/2021.emnlp-main.292/) |
-| Web-based Search | [WebQA](https://arxiv.org/abs/2109.00590), [Bamboogle](https://arxiv.org/abs/2210.03350), [Mind2Web](https://arxiv.org/abs/2306.06070), [WebArena](https://arxiv.org/abs/2307.13854), [WebWalkerQA](https://arxiv.org/abs/2501.07572), [AgentBench](https://arxiv.org/abs/2308.03688)<br>[BrowseComp-en](https://arxiv.org/abs/2504.12516), [BrowseComp-zh](https://arxiv.org/abs/2504.19314), [BrowseComp-Plus](https://arxiv.org/abs/2508.06600), [GAIA](https://arxiv.org/abs/2311.12983), [GAIA-2](https://arxiv.org/abs/2602.11964), [XbenchDeepSearch](https://xbench.org/agi/aisearch)<br>[WebPuzzle](https://arxiv.org/abs/2505.24332), [InfoDeepSeek](https://arxiv.org/abs/2505.15872), [ORION](https://arxiv.org/abs/2505.18105), [WebShaperQA](https://arxiv.org/abs/2507.15061), [DeepResearch-9K](https://arxiv.org/abs/2603.01152), [MiroEval](https://arxiv.org/abs/2603.28407)<br>[DRACO](https://arxiv.org/abs/2602.11685), [Total Recall QA](https://arxiv.org/abs/2603.18516), [DeepSearchQA](https://arxiv.org/abs/2601.20975), [ScholarGym](https://arxiv.org/abs/2601.21654), [MPW-Bench](https://arxiv.org/abs/2603.04751) |
+| Web-based Search | [WebQA](https://arxiv.org/abs/2109.00590), [Bamboogle](https://arxiv.org/abs/2210.03350), [Mind2Web](https://arxiv.org/abs/2306.06070), [WebArena](https://arxiv.org/abs/2307.13854), [WebWalkerQA](https://arxiv.org/abs/2501.07572), [AgentBench](https://arxiv.org/abs/2308.03688)<br>[BrowseComp-en](https://arxiv.org/abs/2504.12516), [BrowseComp-zh](https://arxiv.org/abs/2504.19314), [BrowseComp-Plus](https://arxiv.org/abs/2508.06600), [GAIA](https://arxiv.org/abs/2311.12983), [GAIA-2](https://arxiv.org/abs/2602.11964), [XbenchDeepSearch](https://xbench.org/agi/aisearch)<br>[WebPuzzle](https://arxiv.org/abs/2505.24332), [InfoDeepSeek](https://arxiv.org/abs/2505.15872), [ORION](https://arxiv.org/abs/2505.18105), [WebShaperQA](https://arxiv.org/abs/2507.15061), [DeepResearch-9K](https://arxiv.org/abs/2603.01152)<br>[DRACO](https://arxiv.org/abs/2602.11685), [Total Recall QA](https://arxiv.org/abs/2603.18516), [DeepSearchQA](https://arxiv.org/abs/2601.20975), [ScholarGym](https://arxiv.org/abs/2601.21654) |
 | Multi-modal | [InfoSeek](https://arxiv.org/abs/2302.11713), [MMSearch](https://arxiv.org/abs/2409.12959), [MMSearch-Plus](https://arxiv.org/abs/2508.21475), [SimpleVQA](https://arxiv.org/abs/2502.13059), [LiveVQA](https://arxiv.org/abs/2504.05288), [MM-BrowseComp](https://arxiv.org/abs/2508.13186)<br>[MAT-Search](https://arxiv.org/abs/2505.14246), [Mocheg](https://arxiv.org/abs/2205.12487), [MFC-Bench](https://arxiv.org/abs/2406.11288), [ViDoSeek](https://arxiv.org/abs/2502.18017), [SlideVQA](https://arxiv.org/abs/2301.04883), [MMLongBench](https://arxiv.org/abs/2505.10610)<br>[MM-SearchExam](https://arxiv.org/abs/2603.02795), [VisBrowse-Bench](https://arxiv.org/abs/2603.16289), [LongVidSearch](https://arxiv.org/abs/2603.14468), [VideoDR](https://arxiv.org/abs/2601.06943) |
 | Conversational | [CoQA](https://arxiv.org/abs/1808.07042), [QuAC](https://arxiv.org/abs/1808.07036), [MSMarco](https://arxiv.org/abs/1611.09268), [TopiOCQA](https://aclanthology.org/2022.tacl-1.27/), [QReCC](https://aclanthology.org/2021.naacl-main.44/), [OR-QuAC](https://arxiv.org/abs/2005.11364), [NarrativeQA](https://aclanthology.org/Q18-1023/), [Doc2Dial](https://arxiv.org/abs/2011.06623) |
 | Domain-specific | [MATH](https://arxiv.org/abs/2103.03874), [MATH500](https://huggingface.co/datasets/math-ai/math500), [AIME24](https://huggingface.co/datasets/AI-MO/aimo-validation-aime), [AIME25](https://huggingface.co/datasets/math-ai/aime25), [GSM8K](https://arxiv.org/abs/2110.14168), [MinervaMath](https://huggingface.co/datasets/math-ai/minervamath)<br>[MMLU](https://arxiv.org/abs/2009.03300), [MMLU-Pro](https://arxiv.org/abs/2406.01574), [NuminaMath](https://faculty.bicmr.pku.edu.cn/~dongbin/Publications/numina_dataset.pdf)<br>[MedQA](https://arxiv.org/abs/2009.13081), [MedMCQA](https://arxiv.org/abs/2203.14371), [MedBrowseComp](https://arxiv.org/abs/2505.14963), [ProtMCQs](https://arxiv.org/abs/2603.01464)<br>[OlympiadBench](https://openreview.net/forum?id=OOCRYJIAMS7), [USACO](https://arxiv.org/abs/2404.10952), [HLE](https://arxiv.org/abs/2501.14249)<br>[FinSearchBench-24](https://arxiv.org/abs/2502.15684), [FinAgentBench](https://arxiv.org/abs/2508.14052), [KARLBench](https://arxiv.org/abs/2603.05218), [TaxoBench](https://arxiv.org/abs/2601.12369), [xbench](https://xbench.org/)<br>[MIRAGE](https://arxiv.org/abs/2506.20100), [SolutionBench](https://arxiv.org/abs/2502.20730), [DQA](https://aclanthology.org/2024.naacl-long.364/), [AirQA](https://arxiv.org/abs/2509.16952), [HERB](https://arxiv.org/abs/2506.23139)<br>[SciQ](https://arxiv.org/abs/1707.06209), [SciFact](https://arxiv.org/abs/2004.14974), [ARC](https://arxiv.org/abs/1803.05457), [ScIRGen-Geo](https://arxiv.org/abs/2506.11117), [DeepShop](https://arxiv.org/abs/2506.02839), [NFCorpus](https://ir-datasets.com/nfcorpus.html), [OpenThoughts](https://arxiv.org/abs/2506.04178) |
