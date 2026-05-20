@@ -51,6 +51,11 @@ The below table summarizes representative works with corresponding optimization 
 
 | Method | RL Func. Role | Cold Start? | Training Env. | RL Alg. | Reward Type | Reward Func. | Opt. Scope | Dataset |
 |---|---|---|---|---|---|---|---|---|
+| [Argus](https://arxiv.org/abs/2605.16217) | P–E Orches.<br>Ctx-Mem. | - | Real-world | RL | - | Evidence Assembly<br>Source-traced Answer | Multi-agent | [[BrowseComp-en](https://arxiv.org/abs/2504.12516)] |
+| [CuSearch](https://arxiv.org/abs/2605.11611) ([Code](https://github.com/MrToser/CuSearch)) | Search Efficiency<br>R-Aware Opt. | - | Real-world<br>Simulated | GRPO<br>RLVR | Verifiable Reward | Search-Depth Curriculum<br>SDGA | Single-agent | [[NQ](https://aclanthology.org/Q19-1026/), [TriviaQA](https://arxiv.org/abs/1705.03551), [PopQA](https://arxiv.org/abs/2212.10511), [HotpotQA](https://arxiv.org/abs/1809.09600), [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [MuSiQue](https://arxiv.org/abs/2108.00573), [Bamboogle](https://arxiv.org/abs/2210.03350)] |
+| [HyperEyes](https://arxiv.org/abs/2605.07177) ([Code](https://github.com/DeepExperience/HyperEyes)) | Multi-modal<br>Multi-tool<br>Search Efficiency | ✓ | Real-world | SFT<br>RL | ORM+PRM | TRACE<br>On-Policy Distillation | Single-agent | [IMEB, [MMSearch](https://arxiv.org/abs/2409.12959), [LiveVQA](https://arxiv.org/abs/2504.05288), [InfoSeek](https://arxiv.org/abs/2302.11713)] |
+| [RubricEM](https://arxiv.org/abs/2605.10899) | Ctx-Mem.<br>R–S Inter. | - | Real-world | Stage-Structured GRPO<br>Meta-RL | PRM | Rubric Judgments<br>Reflection | Single-agent | Long-form research benchmarks |
+| [DecEx-RAG](https://arxiv.org/abs/2510.05691) ([Code](https://github.com/sdsxdxl/DecEx-RAG)) | Adapt-Search<br>R–S Inter. | - | Real-world | Process-level Policy Optimization | PRM | Decision Optimization<br>Execution Optimization | Single-agent | Six datasets |
 | [OpenSearch-VL](https://arxiv.org/abs/2605.05185) ([Code](https://github.com/shawn0728/OpenSearch-VL)) | Multi-modal<br>Multi-tool<br>Adapt-Search | ✓ | Real-world | Fatal-aware GRPO | ORM+PRM | Answer Acc<br>Query Quality<br>Format | Single-agent | [SearchVL-SFT-36k, SearchVL-RL-8k, SimpleVQA, VDR, [MMSearch](https://arxiv.org/abs/2409.12959), [LiveVQA](https://arxiv.org/abs/2504.05288), BrowseComp-VL, FVQA, [InfoSeek](https://arxiv.org/abs/2302.11713)] |
 | [OpenSeeker-v2](https://arxiv.org/abs/2605.04036) | Adapt-Search | ✓ | Real-world | SFT | - | - | Single-agent | [[BrowseComp-en](https://arxiv.org/abs/2504.12516), [BrowseComp-zh](https://arxiv.org/abs/2504.19314), [HLE](https://arxiv.org/abs/2501.14249), [XBench](https://xbench.org/)] |
 | [LongSeeker](https://arxiv.org/abs/2605.05191) | Ctx-Mem.<br>Search Efficiency | ✓ | Real-world | SFT | - | Context Orchestration | Single-agent | [[BrowseComp-en](https://arxiv.org/abs/2504.12516), [BrowseComp-zh](https://arxiv.org/abs/2504.19314)] |
@@ -152,6 +157,8 @@ The below table summarizes representative works with corresponding optimization 
 #### Retrieval Control
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.5 | [CuSearch: Curriculum Rollout Sampling via Search Depth for Agentic RAG](https://arxiv.org/abs/2605.11611) | Search Efficiency; Curriculum Rollout Sampling | *arXiv* | [Code](https://github.com/MrToser/CuSearch) |
+| 2026.3 | [Marco DeepResearch: Unlocking Efficient Deep Research Agents via Verification-Centric Design](https://arxiv.org/abs/2603.28376) | Adaptive Search Decision; Verification-Centric Design | *arXiv* |  |
 | 2026.4 | [DR-Venus: Towards Frontier Edge-Scale Deep Research Agents with Only 10K Open Data](https://arxiv.org/abs/2604.19859) | Adaptive Search Decision; Context & Memory Management; Edge-Scale Deep Research | *arXiv* | [Code](https://github.com/inclusionAI/DR-Venus) [Models](https://huggingface.co/collections/inclusionAI/dr-venus) |
 | 2026.5 | [OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories](https://arxiv.org/abs/2605.04036) | Adaptive Search Decision; Search Efficiency | *arXiv* |  |
 | 2026.5 | [LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents](https://arxiv.org/abs/2605.05191) | Context & Memory Management; Search Efficiency | *arXiv* |  |
@@ -205,6 +212,7 @@ The below table summarizes representative works with corresponding optimization 
 #### Query Optimization
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.5 | [LatentRAG: Latent Reasoning and Retrieval for Efficient Agentic RAG](https://arxiv.org/abs/2605.06285) | Latent Retrieval; Search Efficiency | *arXiv* |  |
 | 2026.5 | [Rethinking Reasoning-Intensive Retrieval: Evaluating and Advancing Retrievers in Agentic Search Systems](https://arxiv.org/abs/2605.04018) | Retriever‑Aware Optimization; Agentic Retrieval Evaluation | *ACL 2026* | [Code](https://github.com/yale-nlp/Bright-Pro) |
 | 2026.5 | [Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction](https://arxiv.org/abs/2605.05242) | Retriever‑Aware Optimization; Direct Corpus Interaction | *arXiv* |  |
 | 2026.5 | [AgenticRAG: Agentic Retrieval for Enterprise Knowledge Bases](https://arxiv.org/abs/2605.05538) | Agentic Retrieval; In-document Navigation | *arXiv* |  |
@@ -229,6 +237,10 @@ The below table summarizes representative works with corresponding optimization 
 #### Reasoning–Retrieval Integration
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.5 | [Argus: Evidence Assembly for Scalable Deep Research Agents](https://arxiv.org/abs/2605.16217) | Reasoning-Search Interaction; Evidence Assembly | *arXiv* |  |
+| 2026.5 | [RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards](https://arxiv.org/abs/2605.10899) | Context & Memory Management; Rubric-Guided Process Supervision | *arXiv* |  |
+| 2026.5 | [LatentRAG: Latent Reasoning and Retrieval for Efficient Agentic RAG](https://arxiv.org/abs/2605.06285) | Reasoning-Search Interaction; Search Efficiency | *arXiv* |  |
+| 2025.10 | [DecEx-RAG: Boosting Agentic Retrieval-Augmented Generation with Decision and Execution Optimization via Process Supervision](https://arxiv.org/abs/2510.05691) | Reasoning-Search Interaction; Process Supervision | *arXiv* | [Code](https://github.com/sdsxdxl/DecEx-RAG) |
 | 2026.3 | [Evaluate-as-Action: Self-Evaluated Process Rewards for Retrieval-Augmented Agents](https://arxiv.org/abs/2603.09203) | Reasoning-Search Interaction; Process Supervision | *arXiv* |  |
 | 2026.4 | [CoSearch: Joint Training of Reasoning and Document Ranking via Reinforcement Learning for Agentic Search](https://arxiv.org/abs/2604.17555) | Reasoning-Search Interaction; Retriever‑Aware Optimization | *arXiv* | [Code](https://github.com/snap-research/CoSearch) |
 | 2026.3 | [SE-Search: Self-Evolving Search Agent via Memory and Dense Reward](https://arxiv.org/abs/2603.03293) | Reasoning-Search Interaction; Context & Memory Management | *arXiv* |  |
@@ -263,6 +275,7 @@ The below table summarizes representative works with corresponding optimization 
 #### Multi‑Agent Collaboration
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.5 | [Argus: Evidence Assembly for Scalable Deep Research Agents](https://arxiv.org/abs/2605.16217) | Planner-Executor Orchestration; Evidence Assembly | *arXiv* |  |
 | 2026.1 | [PRISMA: Reinforcement Learning Guided Two-Stage Policy Optimization in Multi-Agent Architecture for Open-Domain Multi-Hop Question Answering](https://arxiv.org/abs/2601.05465) | Planner-Executor Orchestration | *arXiv* |  |
 | 2026.2 | [WideSeek-R1: Exploring Width Scaling for Broad Information Seeking via Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2602.04634) | Cooperative Multi-Agent Systems | *arXiv* |  |
 | 2026.1 | [Beyond Monolithic Architectures: A Multi-Agent Search and Knowledge Optimization Framework for Agentic Search](https://arxiv.org/abs/2601.04703) | Planner-Executor Orchestration; Context & Memory Management | *arXiv* | [Code](https://github.com/chenyiqun/M-ASK) |
@@ -280,6 +293,9 @@ The below table summarizes representative works with corresponding optimization 
 #### Tool and Knowledge Integration
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.5 | [HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents](https://arxiv.org/abs/2605.07177) | Multi‑Tool; Multi‑Modal; Search Efficiency | *arXiv* | [Code](https://github.com/DeepExperience/HyperEyes) |
+| 2026.5 | [RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards](https://arxiv.org/abs/2605.10899) | Context & Memory Management; Rubric-Guided Agentic RL | *arXiv* |  |
+| 2026.3 | [Marco DeepResearch: Unlocking Efficient Deep Research Agents via Verification-Centric Design](https://arxiv.org/abs/2603.28376) | Task / Trajectory Synthesis; Verification-Centric Design | *arXiv* |  |
 | 2026.5 | [OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents](https://arxiv.org/abs/2605.05185) | Multi‑Tool; Multi‑Modal; Adaptive Search Decision | *arXiv* | [Code](https://github.com/shawn0728/OpenSearch-VL) |
 | 2026.5 | [Maximizing Rollout Informativeness under a Fixed Budget: A Submodular View of Tree Search for Tool-Use Agentic Reinforcement Learning](https://arxiv.org/abs/2605.05262) | Multi‑Tool; Training Efficiency | *arXiv* |  |
 | 2026.5 | [BioMedArena: An Open-source Toolkit for Building and Evaluating Biomedical Deep Research Agents](https://arxiv.org/abs/2605.06177) | Domain-Specific; Evaluation Toolkit | *arXiv* | [Code](https://github.com/AI-in-Health/BioMedArena) |
@@ -326,6 +342,13 @@ The below table summarizes representative works with corresponding optimization 
 
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.5 | [Argus: Evidence Assembly for Scalable Deep Research Agents](https://arxiv.org/abs/2605.16217) | Multi-agent Coordination | *arXiv* |  |
+| 2026.5 | [CuSearch: Curriculum Rollout Sampling via Search Depth for Agentic RAG](https://arxiv.org/abs/2605.11611) | Single-agent Optimization | *arXiv* | [Code](https://github.com/MrToser/CuSearch) |
+| 2026.5 | [HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents](https://arxiv.org/abs/2605.07177) | Single-agent Optimization | *arXiv* | [Code](https://github.com/DeepExperience/HyperEyes) |
+| 2026.5 | [RubricEM: Meta-RL with Rubric-guided Policy Decomposition beyond Verifiable Rewards](https://arxiv.org/abs/2605.10899) | Single-agent Optimization | *arXiv* |  |
+| 2026.5 | [LatentRAG: Latent Reasoning and Retrieval for Efficient Agentic RAG](https://arxiv.org/abs/2605.06285) | Single-agent Optimization | *arXiv* |  |
+| 2026.3 | [Marco DeepResearch: Unlocking Efficient Deep Research Agents via Verification-Centric Design](https://arxiv.org/abs/2603.28376) | Single-agent Optimization | *arXiv* |  |
+| 2025.10 | [DecEx-RAG: Boosting Agentic Retrieval-Augmented Generation with Decision and Execution Optimization via Process Supervision](https://arxiv.org/abs/2510.05691) | Single-agent Optimization | *arXiv* | [Code](https://github.com/sdsxdxl/DecEx-RAG) |
 | 2026.5 | [OpenSearch-VL: An Open Recipe for Frontier Multimodal Search Agents](https://arxiv.org/abs/2605.05185) | Single-agent Optimization | *arXiv* | [Code](https://github.com/shawn0728/OpenSearch-VL) |
 | 2026.5 | [OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories](https://arxiv.org/abs/2605.04036) | Single-agent Optimization | *arXiv* |  |
 | 2026.5 | [LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents](https://arxiv.org/abs/2605.05191) | Single-agent Optimization | *arXiv* |  |
@@ -404,6 +427,7 @@ The below table summarizes representative works with corresponding optimization 
 
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2025.10 | [DecEx-RAG: Boosting Agentic Retrieval-Augmented Generation with Decision and Execution Optimization via Process Supervision](https://arxiv.org/abs/2510.05691) | Step‑level Optimization | *arXiv* | [Code](https://github.com/sdsxdxl/DecEx-RAG) |
 | 2026.5 | [A$^2$TGPO: Agentic Turn-Group Policy Optimization with Adaptive Turn-level Clipping](https://arxiv.org/abs/2605.06200) | Step‑level Optimization | *arXiv* |  |
 | 2026.5 | [Maximizing Rollout Informativeness under a Fixed Budget: A Submodular View of Tree Search for Tool-Use Agentic Reinforcement Learning](https://arxiv.org/abs/2605.05262) | Step‑level Optimization | *arXiv* |  |
 | 2026.3 | [Evaluate-as-Action: Self-Evaluated Process Rewards for Retrieval-Augmented Agents](https://arxiv.org/abs/2603.09203) | Step‑level Optimization | *arXiv* |  |
@@ -461,6 +485,9 @@ Below is a compact checklist of commonly used evaluation signals for RL-based ag
 ### Recent Evaluation / Benchmarking Papers (Deep Research / Agentic Search)
 | Time | Paper Title | Focus | Venue |
 | :---- | :----------- | :---- | :---- |
+| 2026.5 | [InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search](https://arxiv.org/abs/2605.07510) | Interleaved Language-Vision Agentic Search Benchmark | *arXiv* |
+| 2026.5 | [HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents](https://arxiv.org/abs/2605.07177) | Parallel Multimodal Search + IMEB Efficiency Benchmark | *arXiv* |
+| 2025.10 | [Agentic Reinforcement Learning for Search is Unsafe](https://arxiv.org/abs/2510.17431) | Safety Evaluation for RL-Trained Search Agents | *arXiv* |
 | 2026.5 | [BioMedArena: An Open-source Toolkit for Building and Evaluating Biomedical Deep Research Agents](https://arxiv.org/abs/2605.06177) | Biomedical Deep Research Evaluation Toolkit | *arXiv* |
 | 2026.5 | [Rethinking Reasoning-Intensive Retrieval: Evaluating and Advancing Retrievers in Agentic Search Systems](https://arxiv.org/abs/2605.04018) | Reasoning-Intensive Retrieval Benchmark (BRIGHT-Pro) | *ACL 2026* |
 | 2026.5 | [Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents](https://arxiv.org/abs/2605.06635) | Source Attribution / Citation Faithfulness Evaluation | *arXiv* |
