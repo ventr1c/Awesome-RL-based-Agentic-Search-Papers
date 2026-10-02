@@ -54,6 +54,7 @@ The below table summarizes representative works with corresponding optimization 
 
 | Method | RL Func. Role | Cold Start? | Training Env. | RL Alg. | Reward Type | Reward Func. | Opt. Scope | Dataset |
 |---|---|---|---|---|---|---|---|---|
+| [Q&D](https://arxiv.org/abs/2609.37236) ([Code](https://github.com/dolev31/ProactiveInquirer)) | R-Aware Opt. | ✓ | Local Retrieval | DPO | Rule-based | Required-Evidence Retrieval<br>Forked-Continuation Preference<br>Stop Contrasts | Step-level | [[MuSiQue](https://arxiv.org/abs/2108.00573), StrategyQA, [2WikiMultiHopQA](https://arxiv.org/abs/2011.01060), [FRAMES](https://aclanthology.org/2025.naacl-long.243/), [τ²-bench](https://arxiv.org/abs/2506.07982)] |
 | [FA-SD](https://arxiv.org/abs/2607.17558) | R–S Inter.<br>Training Stability | - | Real-world<br>Retrieval-Interleaved Search | Self-Distillation<br>EMA Teacher | - | KL Self-Distillation<br>Feedback-Augmented Supervision | Single-agent | Retrieval-interleaved search tasks |
 | [PCTD](https://arxiv.org/abs/2607.15696) | R-Aware Opt.<br>Multi-tool | - | Tool Retrieval<br>Mobile Multi-Turn | RL | - | Counterfactual Retrieval Gain<br>Preference Reward | Module-level | [MTDTool](https://arxiv.org/abs/2607.15696) |
 | [VideoSearcher](https://arxiv.org/abs/2607.02927) ([Code](https://github.com/Stephen-gzk/VideoSearcher)) | Multi-modal<br>Multi-tool<br>R–S Inter. | - | Real-world<br>Video Deep Research | BiSPO | - | Tool-Invocation Objective<br>Answer-Accuracy Objective | Single-agent | [VideoSearch-QA](https://arxiv.org/abs/2607.02927) |
@@ -274,6 +275,7 @@ The below table summarizes representative works with corresponding optimization 
 #### Query Optimization
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.9 | [Asking for What Was Never Requested: Horizontal and Vertical Proactivity in Agents](https://arxiv.org/abs/2609.37236) | Retriever-Aware Optimization; Proactive Information Seeking | *arXiv* | [Code](https://github.com/dolev31/ProactiveInquirer) [Model](https://huggingface.co/dolev31/ProactiveInquirer-Qwen3-8B) |
 | 2026.7 | [PCTD: Preference-Guided Counterfactual Task Decomposition for Agent Tool Retrieval](https://arxiv.org/abs/2607.15696) | Retriever-Aware Optimization; Task Decomposition; Tool Retrieval | *arXiv* |  |
 | 2026.7 | [Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search](https://arxiv.org/abs/2607.15253) | Retriever-Aware Evaluation; Counterfactual Trajectory Utility | *arXiv* |  |
 | 2026.7 | [EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval](https://arxiv.org/abs/2607.12764) | Structured Knowledge Navigation; Adaptive Graph Retrieval | *CVPR 2026* |  |
@@ -603,6 +605,7 @@ The below table summarizes representative works with corresponding optimization 
 
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.9 | [Asking for What Was Never Requested: Horizontal and Vertical Proactivity in Agents](https://arxiv.org/abs/2609.37236) | Step-level Optimization | *arXiv* | [Code](https://github.com/dolev31/ProactiveInquirer) |
 | 2026.7 | [LAPO: Leave-One-Turn Attribution for Self-Generated Process Rewards in Multi-Turn Search Reasoning](https://arxiv.org/abs/2607.13501) | Step-level Optimization | *arXiv* |  |
 | 2026.7 | [Evidence-State Rewards for Long-Context Reasoning](https://arxiv.org/abs/2607.02073) | Step‑level Optimization | *arXiv* |  |
 | 2026.5 | [SD-Search: On-Policy Hindsight Self-Distillation for Search-Augmented Reasoning](https://arxiv.org/abs/2605.18299) | Step‑level Optimization | *arXiv* |  |
