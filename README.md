@@ -675,6 +675,7 @@ Below is a compact checklist of commonly used evaluation signals for RL-based ag
 ### Recent Evaluation / Benchmarking Papers (Deep Research / Agentic Search)
 | Time | Paper Title | Focus | Venue |
 | :---- | :----------- | :---- | :---- |
+| 2026.10 | [More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning](https://arxiv.org/abs/2610.19789) ([Code](https://github.com/aim-uofa/Self-Distillation-AgentRL)) | Agentic Self-Distillation Evaluation Including Search-QA; Performance, Stability and Compute Cost | *arXiv* |
 | 2026.7 | [WorldCupArena: Fine-Grained Evaluation of Language Models and Deep-Research Agents on Football Forecasting](https://arxiv.org/abs/2607.18084) ([Code](https://github.com/wzk1015/WorldCupArena)) | Dynamic Football Forecasting Benchmark for LLMs and Deep-Research Agents | *arXiv* |
 | 2026.7 | [DRNOISE: Benchmarking Deep Research Agents in Misleading Evidence Environments](https://arxiv.org/abs/2607.17291) | Misleading-Evidence Robustness Benchmark | *arXiv* |
 | 2026.7 | [PCTD: Preference-Guided Counterfactual Task Decomposition for Agent Tool Retrieval](https://arxiv.org/abs/2607.15696) | Mobile Multi-Turn Task-Decomposition / Tool-Retrieval Benchmark (MTDTool) | *arXiv* |
