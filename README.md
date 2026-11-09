@@ -381,6 +381,7 @@ The below table summarizes representative works with corresponding optimization 
 | 2026.6 | [SearchSwarm: Towards Delegation Intelligence in Agentic LLMs for Long-Horizon Deep Research](https://arxiv.org/abs/2606.09730) | Cooperative Multi-Agent Systems; Delegation Intelligence | *arXiv* |  |
 | 2026.4 | [Towards Knowledgeable Deep Research: Framework and Benchmark](https://arxiv.org/abs/2604.07720) | Cooperative Multi-Agent Systems; Hybrid Knowledge Analysis | *arXiv* |  |
 | 2026.5 | [Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation](https://arxiv.org/abs/2605.29861) | Cooperative Multi-Agent Systems; Multi‑Modal | *arXiv* |  |
+| 2026.5 | [NeuroMAS: Multi-Agent Systems as Neural Networks with Joint Reinforcement Learning](https://arxiv.org/abs/2605.16757) | Cooperative Multi-Agent Systems; Joint Multi-Agent RL | *STAI-X 2026 (Paper Award Honorable Mention)* | [Code](https://github.com/haoranlustat/NeuroMAS) |
 | 2026.5 | [AgentDisCo: Towards Disentanglement and Collaboration in Open-ended Deep Research Agents](https://arxiv.org/abs/2605.11732) | Cooperative Multi-Agent Systems; Planner-Executor Orchestration | *arXiv* |  |
 | 2026.1 | [O-Researcher: An Open Ended Deep Research Model via Multi-Agent Distillation and Agentic RL](https://arxiv.org/abs/2601.03743) | Cooperative Multi-Agent Systems; Multi‑Tool | *arXiv* |  |
 | 2026.5 | [Argus: Evidence Assembly for Scalable Deep Research Agents](https://arxiv.org/abs/2605.16217) | Planner-Executor Orchestration; Evidence Assembly | *arXiv* |  |
