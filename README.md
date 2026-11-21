@@ -375,6 +375,7 @@ The below table summarizes representative works with corresponding optimization 
 #### Multi‑Agent Collaboration
 | Time | Paper Title | Role | Venue | Code |
 | :---- | :----------- | :---- | :---- | :---- |
+| 2026.10 | [MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation](https://arxiv.org/abs/2610.23234) | Cooperative Multi-Agent Systems; Process Supervision | *arXiv* |  |
 | 2026.7 | [SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration](https://arxiv.org/abs/2607.15257) | Cooperative Multi-Agent Systems; Search-State Management | *arXiv* | [Code](https://github.com/antins-labs/SearchOS) |
 | 2026.7 | [WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search](https://arxiv.org/abs/2607.08662) | Cooperative Multi-Agent Systems; Recursive Delegation | *arXiv* |  |
 | 2026.6 | [Hybrid Open-Ended Tri-Evolution Makes Better Deep Researcher](https://arxiv.org/abs/2606.13710) | Cooperative Multi-Agent Systems; Proposer-Solver-Judge Co-Evolution | *arXiv* |  |
